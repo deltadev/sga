@@ -320,7 +320,8 @@ class SparseGapArray : public GapArray
         //
         void initOverflow(size_t i, OverflowStorage c)
         {
-            m_overflow.insert(std::make_pair<size_t, OverflowStorage>(i, c));
+           std::pair<size_t, OverflowStorage> p(i, c);
+           m_overflow.insert(p);
         }
 
         //
