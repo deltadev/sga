@@ -595,6 +595,7 @@
 		22E92C6618AE50B400E95319 /* libbamtools.2.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbamtools.2.3.0.dylib; path = ../../bamtools/lib/Debug/libbamtools.2.3.0.dylib; sourceTree = "<group>"; };
 		22EAE88418AE50F40006AB7A /* libbamtools-utils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libbamtools-utils.a"; path = "../../bamtools/lib/Debug/libbamtools-utils.a"; sourceTree = "<group>"; };
 		22EAE88618AE518A0006AB7A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		22EAE88818AE55CB0006AB7A /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,6 +622,7 @@
 		22B8152A18AE3B070053479B = {
 			isa = PBXGroup;
 			children = (
+
 				2277A45418AE55FE000BEA16 /* config.h */,
 				22EAE88618AE518A0006AB7A /* libz.dylib */,
 				22EAE88418AE50F40006AB7A /* libbamtools-utils.a */,
