@@ -20,11 +20,11 @@
 #define HashSet std::unordered_set
 typedef std::hash<std::string> StringHasher;
 #elif HAVE_TR1_UNORDERED_MAP
-#include <tr1/unordered_map>
-#include <tr1/unordered_set>
-#define HashMap std::tr1::unordered_map
-#define HashSet std::tr1::unordered_set
-typedef std::tr1::hash<std::string> StringHasher;
+#include <unordered_map>
+#include <unordered_set>
+#define HashMap std::unordered_map
+#define HashSet std::unordered_set
+typedef std::hash<std::string> StringHasher;
 #elif HAVE_EXT_HASH_MAP
 #define USING_EXT_HASH_MAP 1
 # undef __DEPRECATED
@@ -50,7 +50,7 @@ struct StringHasher
 
 // Ensure the sparse hash is available
 #if HAVE_GOOGLE_SPARSE_HASH_MAP
-#include <google/sparse_hash_map>
+#include <sparsehash/sparse_hash_map>
 #define SparseHashMap google::sparse_hash_map
 #else
 #error The google sparse hash is required
