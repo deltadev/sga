@@ -558,7 +558,6 @@
 		22E92B8418AE3BED00E95319 /* VCFUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCFUtil.cpp; sourceTree = "<group>"; };
 		22E92B8518AE3BED00E95319 /* VCFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFUtil.h; sourceTree = "<group>"; };
 		22E92B8618AE3BED00E95319 /* Verbosity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Verbosity.h; sourceTree = "<group>"; };
-		22E92C1D18AE3C8C00E95319 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/Build/config.h; sourceTree = "<group>"; };
 		22E92C3918AE3EB300E95319 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		22E92C3A18AE3EB300E95319 /* api_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = api_global.h; sourceTree = "<group>"; };
 		22E92C3B18AE3EB300E95319 /* BamAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamAlgorithms.h; sourceTree = "<group>"; };
@@ -595,6 +594,7 @@
 		22E92C6618AE50B400E95319 /* libbamtools.2.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbamtools.2.3.0.dylib; path = ../../bamtools/lib/Debug/libbamtools.2.3.0.dylib; sourceTree = "<group>"; };
 		22EAE88418AE50F40006AB7A /* libbamtools-utils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libbamtools-utils.a"; path = "../../bamtools/lib/Debug/libbamtools-utils.a"; sourceTree = "<group>"; };
 		22EAE88618AE518A0006AB7A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		22EAE88818AE55CB0006AB7A /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,12 +621,12 @@
 		22B8152A18AE3B070053479B = {
 			isa = PBXGroup;
 			children = (
+				22EAE88818AE55CB0006AB7A /* config.h */,
 				22EAE88618AE518A0006AB7A /* libz.dylib */,
 				22EAE88418AE50F40006AB7A /* libbamtools-utils.a */,
 				22E92C6618AE50B400E95319 /* libbamtools.2.3.0.dylib */,
 				22E92C4C18AE413D00E95319 /* google */,
 				22E92C3618AE3E9500E95319 /* bam-tools-api */,
-				22E92C1D18AE3C8C00E95319 /* config.h */,
 				22E92A0918AE3BED00E95319 /* Algorithm */,
 				22E92A3618AE3BED00E95319 /* Bigraph */,
 				22E92A4218AE3BED00E95319 /* Concurrency */,
