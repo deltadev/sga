@@ -187,6 +187,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2277A45418AE55FE000BEA16 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
 		22B8153318AE3B070053479B /* sga */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sga; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B8153818AE3B070053479B /* sga.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sga.1; sourceTree = "<group>"; };
 		22E92A0A18AE3BED00E95319 /* ClusterProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterProcess.cpp; sourceTree = "<group>"; };
@@ -558,7 +559,6 @@
 		22E92B8418AE3BED00E95319 /* VCFUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCFUtil.cpp; sourceTree = "<group>"; };
 		22E92B8518AE3BED00E95319 /* VCFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFUtil.h; sourceTree = "<group>"; };
 		22E92B8618AE3BED00E95319 /* Verbosity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Verbosity.h; sourceTree = "<group>"; };
-		22E92C1D18AE3C8C00E95319 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/Build/config.h; sourceTree = "<group>"; };
 		22E92C3918AE3EB300E95319 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		22E92C3A18AE3EB300E95319 /* api_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = api_global.h; sourceTree = "<group>"; };
 		22E92C3B18AE3EB300E95319 /* BamAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamAlgorithms.h; sourceTree = "<group>"; };
@@ -621,12 +621,12 @@
 		22B8152A18AE3B070053479B = {
 			isa = PBXGroup;
 			children = (
+				2277A45418AE55FE000BEA16 /* config.h */,
 				22EAE88618AE518A0006AB7A /* libz.dylib */,
 				22EAE88418AE50F40006AB7A /* libbamtools-utils.a */,
 				22E92C6618AE50B400E95319 /* libbamtools.2.3.0.dylib */,
 				22E92C4C18AE413D00E95319 /* google */,
 				22E92C3618AE3E9500E95319 /* bam-tools-api */,
-				22E92C1D18AE3C8C00E95319 /* config.h */,
 				22E92A0918AE3BED00E95319 /* Algorithm */,
 				22E92A3618AE3BED00E95319 /* Bigraph */,
 				22E92A4218AE3BED00E95319 /* Concurrency */,
