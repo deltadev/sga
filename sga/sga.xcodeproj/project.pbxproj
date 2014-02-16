@@ -579,17 +579,10 @@
 		22E92C4918AE3EB300E95319 /* SamReadGroupDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamReadGroupDictionary.h; sourceTree = "<group>"; };
 		22E92C4A18AE3EB300E95319 /* SamSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamSequence.h; sourceTree = "<group>"; };
 		22E92C4B18AE3EB300E95319 /* SamSequenceDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamSequenceDictionary.h; sourceTree = "<group>"; };
-		22E92C4D18AE413D00E95319 /* dense_hash_map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dense_hash_map; sourceTree = "<group>"; };
-		22E92C4E18AE413D00E95319 /* dense_hash_set */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dense_hash_set; sourceTree = "<group>"; };
-		22E92C4F18AE413D00E95319 /* sparse_hash_map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sparse_hash_map; sourceTree = "<group>"; };
-		22E92C5018AE413D00E95319 /* sparse_hash_set */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sparse_hash_set; sourceTree = "<group>"; };
 		22E92C5218AE413D00E95319 /* densehashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = densehashtable.h; sourceTree = "<group>"; };
 		22E92C5318AE413D00E95319 /* hashtable-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hashtable-common.h"; sourceTree = "<group>"; };
 		22E92C5418AE413D00E95319 /* libc_allocator_with_realloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libc_allocator_with_realloc.h; sourceTree = "<group>"; };
 		22E92C5518AE413D00E95319 /* sparsehashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sparsehashtable.h; sourceTree = "<group>"; };
-		22E92C5618AE413D00E95319 /* sparsetable */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sparsetable; sourceTree = "<group>"; };
-		22E92C5718AE413D00E95319 /* template_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template_util.h; sourceTree = "<group>"; };
-		22E92C5818AE413D00E95319 /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
 		22E92C5D18AE424900E95319 /* testing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testing; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E92C5F18AE424900E95319 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22E92C6118AE424900E95319 /* testing.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = testing.1; sourceTree = "<group>"; };
@@ -1182,14 +1175,7 @@
 		22E92C4C18AE413D00E95319 /* google */ = {
 			isa = PBXGroup;
 			children = (
-				22E92C4D18AE413D00E95319 /* dense_hash_map */,
-				22E92C4E18AE413D00E95319 /* dense_hash_set */,
-				22E92C4F18AE413D00E95319 /* sparse_hash_map */,
-				22E92C5018AE413D00E95319 /* sparse_hash_set */,
 				22E92C5118AE413D00E95319 /* sparsehash */,
-				22E92C5618AE413D00E95319 /* sparsetable */,
-				22E92C5718AE413D00E95319 /* template_util.h */,
-				22E92C5818AE413D00E95319 /* type_traits.h */,
 			);
 			name = google;
 			path = "../sparsehash-2.0.2/src/google";
