@@ -1,2 +1,4 @@
-sparsehash-2.0.2/
-!sparsehash-2.0.2/src/google/
+sparsehash-2.0.2/*
+!sparsehash-2.0.2/src/
+sparsehash-2.0.2/src/*
+!sparsehash-2.0.2/src/sparsehash/
