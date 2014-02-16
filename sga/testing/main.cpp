@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <sparsehash/sparse_hash_set>
 
 int main(int argc, const char * argv[])
 {

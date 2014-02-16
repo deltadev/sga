@@ -68,10 +68,10 @@ fi
 
 # Check for the google sparse hash
 AC_ARG_WITH(sparsehash, AS_HELP_STRING([--with-sparsehash=PATH],
-	[specify directory containing the google sparsehash headers http://code.google.com/p/google-sparsehash/)]))
+	[specify directory containing the google sparsehash headers https://code.google.com/p/sparsehash/)]))
 
 if test "$with_sparsehash" -a -d "$with_sparsehash"; then
-    sparsehash_include="-I$with_sparsehash/include"
+    sparsehash_include="-I$with_sparsehash/"
 fi
 
 # Warn that multithreading is not available on macosx, since it does not implement unnamed semaphores
@@ -92,7 +92,7 @@ fi
 
 # Set compiler flags.
 AC_SUBST(AM_CXXFLAGS, "-Wall -Wextra $fail_on_warning -Wno-unknown-pragmas")
-AC_SUBST(CXXFLAGS, "-O3")
+AC_SUBST(CXXFLAGS, "-O3 -std=c++11")
 AC_SUBST(CFLAGS, "-O3")
 AC_SUBST(CPPFLAGS, "$CPPFLAGS $openmp_cppflags $sparsehash_include $bamtools_include")
 AC_SUBST(LDFLAGS, "$openmp_cppflags $external_malloc_ldflags $bamtools_ldflags $LDFLAGS")
@@ -115,11 +115,11 @@ fi
 
 
 # Ensure the sparse hash is available
-AC_CHECK_HEADERS([google/sparse_hash_set],,[AC_MSG_ERROR([google sparse hash library is required: http://code.google.com/p/google-sparsehash/])])
+AC_CHECK_HEADERS([sparsehash/sparse_hash_set],,[AC_MSG_ERROR([sparsehash library is required: https://code.google.com/p/sparsehash/])])
 
 # Check for hash table headers
 AC_CHECK_HEADERS([ \
-	google/sparse_hash_set google/sparse_hash_map \
+	sparsehash/sparse_hash_set sparsehash/sparse_hash_map \
 	unordered_map tr1/unordered_map ext/hash_map \
 	unordered_set tr1/unordered_set ext/hash_set \
 ])
