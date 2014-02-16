@@ -49,7 +49,7 @@ struct StringHasher
 #endif 
 
 // Ensure the sparse hash is available
-#if HAVE_GOOGLE_SPARSE_HASH_MAP
+#if HAVE_SPARSEHASH_SPARSE_HASH_MAP
 #include <sparsehash/sparse_hash_map>
 #define SparseHashMap google::sparse_hash_map
 #else

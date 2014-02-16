@@ -5,19 +5,13 @@
 #define HAVE_API_BAMREADER_H 1
 
 /* clock_getttime found */
-/* #undef HAVE_CLOCK_GETTIME */
+#define HAVE_CLOCK_GETTIME 1
 
 /* Define to 1 if you have the <ext/hash_map> header file. */
 #define HAVE_EXT_HASH_MAP 1
 
 /* Define to 1 if you have the <ext/hash_set> header file. */
 #define HAVE_EXT_HASH_SET 1
-
-/* Define to 1 if you have the <google/sparse_hash_map> header file. */
-#define HAVE_GOOGLE_SPARSE_HASH_MAP 1
-
-/* Define to 1 if you have the <google/sparse_hash_set> header file. */
-#define HAVE_GOOGLE_SPARSE_HASH_SET 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -35,7 +29,13 @@
 #define HAVE_MEMORY_H 1
 
 /* Define if OpenMP is enabled */
-#define HAVE_OPENMP 0
+#define HAVE_OPENMP 1
+
+/* Define to 1 if you have the <sparsehash/sparse_hash_map> header file. */
+#define HAVE_SPARSEHASH_SPARSE_HASH_MAP 1
+
+/* Define to 1 if you have the <sparsehash/sparse_hash_set> header file. */
+#define HAVE_SPARSEHASH_SPARSE_HASH_SET 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -65,10 +65,10 @@
 #define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the <unordered_map> header file. */
-/* #undef HAVE_UNORDERED_MAP */
+#define HAVE_UNORDERED_MAP 1
 
 /* Define to 1 if you have the <unordered_set> header file. */
-/* #undef HAVE_UNORDERED_SET */
+#define HAVE_UNORDERED_SET 1
 
 /* Name of package */
 #define PACKAGE "sga"
@@ -80,16 +80,19 @@
 #define PACKAGE_NAME "sga"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "sga 0.9.39"
+#define PACKAGE_STRING "sga 0.10.13"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "sga"
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.9.39"
+#define PACKAGE_VERSION "0.10.13"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.9.39"
+#define VERSION "0.10.13"
