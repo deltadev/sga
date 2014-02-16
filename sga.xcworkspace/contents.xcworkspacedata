@@ -2,8 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-
       location = "container:sga/sga.xcodeproj">
-
+   </FileRef>
+   <FileRef
+      location = "group:../bamtools/build/BamTools.xcodeproj">
    </FileRef>
 </Workspace>
