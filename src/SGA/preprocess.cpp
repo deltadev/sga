@@ -60,6 +60,8 @@ static const char *PREPROCESS_USAGE_MESSAGE =
 "      --permute-ambiguous              Randomly change ambiguous base calls to one of possible bases.\n"
 "                                       If this option is not specified, the entire read will be discarded.\n"
 "      -s, --sample=FLOAT               Randomly sample reads or pairs with acceptance probability FLOAT.\n"
+"      --sample-keep-others=FILE        Only valid with --sample option. Effectively partions data; writes reads that\n"
+"                                       are not sampled to FILE\n"
 "      --dust                           Perform dust-style filtering of low complexity reads.\n"
 "      --dust-threshold=FLOAT           filter out reads that have a dust score higher than FLOAT (default: 4.0).\n"
 "      --suffix=SUFFIX                  append SUFFIX to each read ID\n"
@@ -87,6 +89,7 @@ namespace opt
     static int qualityFilter = -1;
     static unsigned int peMode = 0;
     static double sampleFreq = 1.0f;
+    static std::string sampleKeepOthersFile; // For use with sampleFreq.
 
     static bool bDiscardAmbiguous = true;
     static QualityScaling qualityScale = QS_SANGER;
@@ -107,7 +110,8 @@ namespace opt
 static const char* shortopts = "o:q:m:h:p:r:c:s:f:vi";
 
 enum { OPT_HELP = 1, OPT_VERSION, OPT_PERMUTE, OPT_QSCALE, OPT_MINGC, OPT_MAXGC, 
-       OPT_DUST, OPT_DUST_THRESHOLD, OPT_SUFFIX, OPT_PHRED64, OPT_OUTPUTORPHANS, OPT_DISABLE_PRIMER };
+       OPT_DUST, OPT_DUST_THRESHOLD, OPT_SUFFIX, OPT_PHRED64, OPT_OUTPUTORPHANS, OPT_DISABLE_PRIMER,
+       OPT_SAMPLE_KEEP_OTHERS};
 
 static const struct option longopts[] = {
     { "verbose",                no_argument,       NULL, 'v' },
@@ -118,6 +122,7 @@ static const struct option longopts[] = {
     { "hard-clip",              required_argument, NULL, 'h' },
     { "min-length",             required_argument, NULL, 'm' },
     { "sample",                 required_argument, NULL, 's' },
+    { "sample-keep-others",     required_argument, NULL, OPT_SAMPLE_KEEP_OTHERS },
     { "remove-adapter-fwd",     required_argument, NULL, 'r' },
     { "remove-adapter-rev",     required_argument, NULL, 'c' },
     { "dust",                   no_argument,       NULL, OPT_DUST},
@@ -150,6 +155,7 @@ int preprocessMain(int argc, char** argv)
     Timer* pTimer = new Timer("sga preprocess");
     parsePreprocessOptions(argc, argv);
 
+    std::cerr << "TEST:\n";
     std::cerr << "Parameters:\n";
     std::cerr << "QualTrim: " << opt::qualityTrim << "\n";
 
@@ -161,6 +167,8 @@ int preprocessMain(int argc, char** argv)
     std::cerr << "HardClip: " << opt::hardClip << "\n";
     std::cerr << "Min length: " << opt::minLength << "\n";
     std::cerr << "Sample freq: " << opt::sampleFreq << "\n";
+    if(!opt::sampleKeepOthersFile.empty())
+      std::cerr << "sample-keep file: " << opt::sampleKeepOthersFile << "\n";
     std::cerr << "PE Mode: " << opt::peMode << "\n";
     std::cerr << "Quality scaling: " << opt::qualityScale << "\n";
     std::cerr << "MinGC: " << opt::minGC << "\n";
@@ -181,7 +189,7 @@ int preprocessMain(int argc, char** argv)
     }
 
     // Seed the RNG
-    srand(time(NULL));
+    srand((unsigned)time(NULL));
 
     std::ostream* pWriter;
     if(opt::outFile.empty())
@@ -190,8 +198,7 @@ int preprocessMain(int argc, char** argv)
     }
     else
     {
-        std::ostream* pFile = createWriter(opt::outFile);
-        pWriter = pFile;
+        pWriter = createWriter(opt::outFile);
     }
 
     // Create a filehandle to write orphaned reads to, if necessary
@@ -199,6 +206,11 @@ int preprocessMain(int argc, char** argv)
     if(!opt::orphanFile.empty())
         pOrphanWriter = createWriter(opt::orphanFile);
 
+    std::ostream* pKeepOthersFile = NULL;
+    if (!opt::sampleKeepOthersFile.empty()) {
+      pKeepOthersFile = createWriter(opt::sampleKeepOthersFile);
+    }
+  
     if(opt::peMode == 0)
     {
         // Treat files as SE data
@@ -212,14 +224,21 @@ int preprocessMain(int argc, char** argv)
             while(reader.get(record))
             {
                 bool passed = processRead(record);
-                if(passed && samplePass())
+                if (passed)
                 {
                     if(!opt::suffix.empty())
-                        record.id.append(opt::suffix);
+                      record.id.append(opt::suffix);
 
-                    record.write(*pWriter);
-                    ++s_numReadsKept;
-                    s_numBasesKept += record.seq.length();
+                    if(samplePass())
+                    {
+                        record.write(*pWriter);
+                        ++s_numReadsKept;
+                        s_numBasesKept += record.seq.length();
+                    }
+                    else if (pKeepOthersFile)
+                    {
+                        record.write(*pKeepOthersFile);
+                    }
                 }
             }
         }
@@ -256,6 +275,7 @@ int preprocessMain(int argc, char** argv)
                 // Read from a single file
                 std::string filename = argv[optind++];
                 pReader1 = new SeqReader(filename, SRF_NO_VALIDATION);
+                // cunning.
                 pReader2 = pReader1;
                 std::cerr << "Processing interleaved pe file " << filename << "\n";
             }
@@ -292,24 +312,32 @@ int preprocessMain(int argc, char** argv)
                 bool passed1 = processRead(record1);
                 bool passed2 = processRead(record2);
 
-                if(!samplePass())
-                    continue;
-
-                if(passed1 && passed2)
+                if(samplePass())
                 {
-                    record1.write(*pWriter);
-                    record2.write(*pWriter);
-                    s_numReadsKept += 2;
-                    s_numBasesKept += record1.seq.length();
-                    s_numBasesKept += record2.seq.length();
+                    if(passed1 && passed2)
+                    {
+                      record1.write(*pWriter);
+                      record2.write(*pWriter);
+                      s_numReadsKept += 2;
+                      s_numBasesKept += record1.seq.length();
+                      s_numBasesKept += record2.seq.length();
+                    }
+                    else if(passed1 && pOrphanWriter != NULL)
+                    {
+                      record1.write(*pOrphanWriter);
+                    }
+                    else if(passed2 && pOrphanWriter != NULL)
+                    {
+                      record2.write(*pOrphanWriter);
+                    }
                 }
-                else if(passed1 && pOrphanWriter != NULL)
+                else if (pKeepOthersFile)
                 {
-                    record1.write(*pOrphanWriter);
-                }
-                else if(passed2 && pOrphanWriter != NULL)
-                {
-                    record2.write(*pOrphanWriter);
+                  if(passed1 && passed2)
+                  {
+                    record1.write(*pKeepOthersFile);
+                    record2.write(*pKeepOthersFile);
+                  }
                 }
             }
 
@@ -330,6 +358,8 @@ int preprocessMain(int argc, char** argv)
         delete pWriter;
     if(pOrphanWriter != NULL)
         delete pOrphanWriter;
+    if(pKeepOthersFile != NULL)
+      delete pKeepOthersFile;
 
     std::cerr << "\nPreprocess stats:\n";
     std::cerr << "Reads parsed:\t" << s_numReadsRead << "\n";
@@ -358,13 +388,13 @@ bool processRead(SeqRecord& record)
 
         if(found != std::string::npos)
         {
-            _length = opt::adapterF.length();
+            _length = static_cast<int>(opt::adapterF.length());
         }
         else
         { 
             // Couldn't find the fwd adapter; Try the reverse version
             found = _tmp.find(opt::adapterR);
-           _length = opt::adapterR.length();
+           _length = static_cast<int>(opt::adapterR.length());
         }
 
         if(found != std::string::npos) // found the adapter
@@ -526,7 +556,7 @@ void softClip(int qualTrim, std::string& seq, std::string& qual)
 
     int endpoint = 0; // not inclusive
     int max = 0;
-    int i = seq.length() - 1;
+    int i = static_cast<int>(seq.length()) - 1;
     int terminalScore = Quality::char2phred(qual[i]);
     // Only perform soft-clipping if the last base has qual less than qualTrim
     if(terminalScore >= qualTrim)
@@ -602,6 +632,7 @@ void parsePreprocessOptions(int argc, char** argv)
             case 's': arg >> opt::sampleFreq; break;
             case '?': die = true; break;
             case 'v': opt::verbose++; break;
+            case OPT_SAMPLE_KEEP_OTHERS: arg >> opt::sampleKeepOthersFile; break;
             case OPT_DUST_THRESHOLD: arg >> opt::dustThreshold; opt::bDustFilter = true; break;
             case OPT_SUFFIX: arg >> opt::suffix; break;
             case OPT_MINGC: arg >> opt::minGC; opt::bFilterGC = true; break;
@@ -619,6 +650,7 @@ void parsePreprocessOptions(int argc, char** argv)
                 exit(EXIT_SUCCESS);
         }
     }
+  
 
     if (argc - optind < 1)
     {
@@ -632,6 +664,10 @@ void parsePreprocessOptions(int argc, char** argv)
         exit(EXIT_FAILURE);
     }
 
+    if(!opt::sampleKeepOthersFile.empty() && opt::sampleFreq == 1.0f) {
+      std::cout << SUBPROGRAM ": WARNING sample-keep-others set with a sampleFreq == 1.\n";
+    }
+  
     if(opt::peMode > 2)
     {
         std::cerr << SUBPROGRAM ": error pe-mode must be 0,1 or 2 (found: " << opt::peMode << ")\n";
