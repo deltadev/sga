@@ -186,11 +186,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2277A45418AE55FE000BEA16 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
 		22B8153318AE3B070053479B /* sga */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sga; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B8153818AE3B070053479B /* sga.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sga.1; sourceTree = "<group>"; };
 		22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbamtools.2.3.0.dylib; path = ../../bamtools/lib/Debug/libbamtools.2.3.0.dylib; sourceTree = "<group>"; };
-		22C1937B18AEEC900078A55F /* sga */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = sga; path = "../../../../Library/Developer/Xcode/DerivedData/sga-bleucimrddksqpdntclsdxvgchpe/Build/Products/Release/sga"; sourceTree = "<group>"; };
+		22D6630E18B4F2EF001CAF81 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
 		22E92A0A18AE3BED00E95319 /* ClusterProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterProcess.cpp; sourceTree = "<group>"; };
 		22E92A0B18AE3BED00E95319 /* ClusterProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterProcess.h; sourceTree = "<group>"; };
 		22E92A0C18AE3BED00E95319 /* ConnectProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectProcess.cpp; sourceTree = "<group>"; };
@@ -560,29 +559,6 @@
 		22E92B8418AE3BED00E95319 /* VCFUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCFUtil.cpp; sourceTree = "<group>"; };
 		22E92B8518AE3BED00E95319 /* VCFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFUtil.h; sourceTree = "<group>"; };
 		22E92B8618AE3BED00E95319 /* Verbosity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Verbosity.h; sourceTree = "<group>"; };
-		22E92C3918AE3EB300E95319 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
-		22E92C3A18AE3EB300E95319 /* api_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = api_global.h; sourceTree = "<group>"; };
-		22E92C3B18AE3EB300E95319 /* BamAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamAlgorithms.h; sourceTree = "<group>"; };
-		22E92C3C18AE3EB300E95319 /* BamAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamAlignment.h; sourceTree = "<group>"; };
-		22E92C3D18AE3EB300E95319 /* BamAux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamAux.h; sourceTree = "<group>"; };
-		22E92C3E18AE3EB300E95319 /* BamConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamConstants.h; sourceTree = "<group>"; };
-		22E92C3F18AE3EB300E95319 /* BamIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamIndex.h; sourceTree = "<group>"; };
-		22E92C4018AE3EB300E95319 /* BamMultiReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamMultiReader.h; sourceTree = "<group>"; };
-		22E92C4118AE3EB300E95319 /* BamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamReader.h; sourceTree = "<group>"; };
-		22E92C4218AE3EB300E95319 /* BamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BamWriter.h; sourceTree = "<group>"; };
-		22E92C4318AE3EB300E95319 /* IBamIODevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBamIODevice.h; sourceTree = "<group>"; };
-		22E92C4418AE3EB300E95319 /* SamConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamConstants.h; sourceTree = "<group>"; };
-		22E92C4518AE3EB300E95319 /* SamHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamHeader.h; sourceTree = "<group>"; };
-		22E92C4618AE3EB300E95319 /* SamProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamProgram.h; sourceTree = "<group>"; };
-		22E92C4718AE3EB300E95319 /* SamProgramChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamProgramChain.h; sourceTree = "<group>"; };
-		22E92C4818AE3EB300E95319 /* SamReadGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamReadGroup.h; sourceTree = "<group>"; };
-		22E92C4918AE3EB300E95319 /* SamReadGroupDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamReadGroupDictionary.h; sourceTree = "<group>"; };
-		22E92C4A18AE3EB300E95319 /* SamSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamSequence.h; sourceTree = "<group>"; };
-		22E92C4B18AE3EB300E95319 /* SamSequenceDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamSequenceDictionary.h; sourceTree = "<group>"; };
-		22E92C5218AE413D00E95319 /* densehashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = densehashtable.h; sourceTree = "<group>"; };
-		22E92C5318AE413D00E95319 /* hashtable-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hashtable-common.h"; sourceTree = "<group>"; };
-		22E92C5418AE413D00E95319 /* libc_allocator_with_realloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libc_allocator_with_realloc.h; sourceTree = "<group>"; };
-		22E92C5518AE413D00E95319 /* sparsehashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sparsehashtable.h; sourceTree = "<group>"; };
 		22E92C5D18AE424900E95319 /* testing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testing; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E92C5F18AE424900E95319 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22E92C6118AE424900E95319 /* testing.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = testing.1; sourceTree = "<group>"; };
@@ -614,14 +590,11 @@
 		22B8152A18AE3B070053479B = {
 			isa = PBXGroup;
 			children = (
-				22C1937B18AEEC900078A55F /* sga */,
+				22D6630E18B4F2EF001CAF81 /* config.h */,
 				22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */,
-				2277A45418AE55FE000BEA16 /* config.h */,
 				22EAE88618AE518A0006AB7A /* libz.dylib */,
 				22EAE88418AE50F40006AB7A /* libbamtools-utils.a */,
 				22E92C6618AE50B400E95319 /* libbamtools.2.3.0.dylib */,
-				22E92C4C18AE413D00E95319 /* google */,
-				22E92C3618AE3E9500E95319 /* bam-tools-api */,
 				22E92A0918AE3BED00E95319 /* Algorithm */,
 				22E92A3618AE3BED00E95319 /* Bigraph */,
 				22E92A4218AE3BED00E95319 /* Concurrency */,
@@ -1129,69 +1102,6 @@
 			path = ../src/Util;
 			sourceTree = "<group>";
 		};
-		22E92C3618AE3E9500E95319 /* bam-tools-api */ = {
-			isa = PBXGroup;
-			children = (
-				22E92C3718AE3EB300E95319 /* api */,
-			);
-			name = "bam-tools-api";
-			sourceTree = "<group>";
-		};
-		22E92C3718AE3EB300E95319 /* api */ = {
-			isa = PBXGroup;
-			children = (
-				22E92C3818AE3EB300E95319 /* algorithms */,
-				22E92C3A18AE3EB300E95319 /* api_global.h */,
-				22E92C3B18AE3EB300E95319 /* BamAlgorithms.h */,
-				22E92C3C18AE3EB300E95319 /* BamAlignment.h */,
-				22E92C3D18AE3EB300E95319 /* BamAux.h */,
-				22E92C3E18AE3EB300E95319 /* BamConstants.h */,
-				22E92C3F18AE3EB300E95319 /* BamIndex.h */,
-				22E92C4018AE3EB300E95319 /* BamMultiReader.h */,
-				22E92C4118AE3EB300E95319 /* BamReader.h */,
-				22E92C4218AE3EB300E95319 /* BamWriter.h */,
-				22E92C4318AE3EB300E95319 /* IBamIODevice.h */,
-				22E92C4418AE3EB300E95319 /* SamConstants.h */,
-				22E92C4518AE3EB300E95319 /* SamHeader.h */,
-				22E92C4618AE3EB300E95319 /* SamProgram.h */,
-				22E92C4718AE3EB300E95319 /* SamProgramChain.h */,
-				22E92C4818AE3EB300E95319 /* SamReadGroup.h */,
-				22E92C4918AE3EB300E95319 /* SamReadGroupDictionary.h */,
-				22E92C4A18AE3EB300E95319 /* SamSequence.h */,
-				22E92C4B18AE3EB300E95319 /* SamSequenceDictionary.h */,
-			);
-			name = api;
-			path = ../../bamtools/include/api;
-			sourceTree = "<group>";
-		};
-		22E92C3818AE3EB300E95319 /* algorithms */ = {
-			isa = PBXGroup;
-			children = (
-				22E92C3918AE3EB300E95319 /* Sort.h */,
-			);
-			path = algorithms;
-			sourceTree = "<group>";
-		};
-		22E92C4C18AE413D00E95319 /* google */ = {
-			isa = PBXGroup;
-			children = (
-				22E92C5118AE413D00E95319 /* sparsehash */,
-			);
-			name = google;
-			path = "../sparsehash-2.0.2/src/google";
-			sourceTree = "<group>";
-		};
-		22E92C5118AE413D00E95319 /* sparsehash */ = {
-			isa = PBXGroup;
-			children = (
-				22E92C5218AE413D00E95319 /* densehashtable.h */,
-				22E92C5318AE413D00E95319 /* hashtable-common.h */,
-				22E92C5418AE413D00E95319 /* libc_allocator_with_realloc.h */,
-				22E92C5518AE413D00E95319 /* sparsehashtable.h */,
-			);
-			path = sparsehash;
-			sourceTree = "<group>";
-		};
 		22E92C5E18AE424900E95319 /* testing */ = {
 			isa = PBXGroup;
 			children = (
@@ -1510,7 +1420,7 @@
 					/Volumes/HD2/Users/dj/remotes/github/bamtools/lib/Debug,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../bamtools/include\" \"$(SRCROOT)/../sparsehash-2.0.2/include\" $(SRCROOT)/../src/ThirdParty/";
+				USER_HEADER_SEARCH_PATHS = "\"$(HOME)/include/bamtools\" $(SRCROOT)/../src/ThirdParty/ ${HOME}/include";
 			};
 			name = Debug;
 		};
@@ -1524,7 +1434,7 @@
 					/Volumes/HD2/Users/dj/remotes/github/bamtools/lib/Debug,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../bamtools/include\" \"$(SRCROOT)/../sparsehash-2.0.2/include\" $(SRCROOT)/../src/ThirdParty/";
+				USER_HEADER_SEARCH_PATHS = "\"$(HOME)/include/bamtools\" $(SRCROOT)/../src/ThirdParty/ ${HOME}/include";
 			};
 			name = Release;
 		};
