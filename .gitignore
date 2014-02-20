@@ -5,8 +5,3 @@ src/config.status
 src/config.log
 src/config.h
 src/stamp-h1
-
-sparsehash-2.0.2/*
-!sparsehash-2.0.2/src/
-sparsehash-2.0.2/src/*
-!sparsehash-2.0.2/src/sparsehash/
