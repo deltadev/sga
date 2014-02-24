@@ -30,10 +30,10 @@
 #include "gen-ssa.h"
 
 // trio
-#include "correct-long.h"
+//#include "correct-long.h"
 #include "correct_trio.h"
 #include "sample-reads.h"
-#include "convert-beetl.h"
+//#include "convert-beetl.h"
 //
 #include "bwt2fa.h"
 #include "graph-diff.h"
@@ -164,14 +164,14 @@ int main(int argc, char** argv)
         else if(command == "gen-ssa")
             genSSAMain(argc - 1, argv + 1);
 // trio
-        else if(command == "correct-long")
-            correctLongMain(argc - 1, argv + 1);
+        // else if(command == "correct-long")
+        //     correctLongMain(argc - 1, argv + 1);
         else if(command == "correct-trio")
             correctTrioMain(argc - 1, argv + 1);
         else if (command == "sample-reads") 
             sampleReadsMain(argc -1, argv + 1);
-        else if(command == "convert-beetl")
-            convertBeetlMain(argc - 1, argv + 1);
+        // else if(command == "convert-beetl")
+        //     convertBeetlMain(argc - 1, argv + 1);
 //
         else if(command == "bwt2fa")
             bwt2faMain(argc - 1, argv + 1);
