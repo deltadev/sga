@@ -55,4 +55,7 @@ sga_SOURCES = sga.cpp \
               rewrite-evidence-bam.h rewrite-evidence-bam.cpp \
               haplotype-filter.h haplotype-filter.cpp \
               OverlapCommon.h OverlapCommon.cpp \
+              correct_trio.h correct_trio.cpp \
+              sample-reads.h sample-reads.cpp \
+              PCR-pair-removal.h PCR-pair-removal.cpp \
               SGACommon.h 

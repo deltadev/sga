@@ -31,4 +31,7 @@ libalgorithm_a_SOURCES = \
         HaplotypeBuilder.h HaplotypeBuilder.cpp \
         GapFillProcess.h GapFillProcess.cpp \
         VariationBuilderCommon.h VariationBuilderCommon.cpp \
-        KmerOverlaps.h KmerOverlaps.cpp
+        KmerOverlaps.h KmerOverlaps.cpp \
+        TrioCorrectProcess.h TrioCorrectProcess.cpp \
+        RemovePCRDuplicates.h RemovePCRDuplicates.cpp
+        
