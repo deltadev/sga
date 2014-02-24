@@ -76,7 +76,7 @@ static int64_t s_numInvalidPE = 0;
 //
 int sampleReadsMain(int argc, char** argv)
 {
-    Timer* pTimer = new Timer("sga sample-reads");
+    Timer timer("sga sample-reads");
     parseSampleReadsOptions(argc, argv);
     
     std::cerr << "Parameters:\n";
@@ -91,7 +91,7 @@ int sampleReadsMain(int argc, char** argv)
 
     
     // Seed the RNG
-    srand(time(NULL));
+    srand(4242);//time(NULL));
     
     std::ostream* pWriter;
     if(opt::outFile.empty())
@@ -100,9 +100,10 @@ int sampleReadsMain(int argc, char** argv)
     }
     else
     {
-        std::ofstream* pFile = new std::ofstream(opt::outFile.c_str());
-        assertFileOpen(*pFile, opt::outFile);
-        pWriter = pFile;
+        // std::ofstream* pFile = new std::ofstream(opt::outFile.c_str());
+        // assertFileOpen(*pFile, opt::outFile);
+
+        pWriter = createWriter(opt::outFile);
     }
     
     // Create a filehandle to write unsampled reads to, if necessary
@@ -205,10 +206,10 @@ int sampleReadsMain(int argc, char** argv)
         
     }
     
-    if(pWriter != &std::cout)
+    if(pWriter && pWriter != &std::cout)
         delete pWriter;
     
-    if(!opt::discardFile.empty())
+    if(pDiscardWriter)
         delete pDiscardWriter;
     
     std::cerr << "\nPreprocess stats:\n";
@@ -217,7 +218,7 @@ int sampleReadsMain(int argc, char** argv)
     std::cerr << "Bases parsed:\t" << s_numBasesRead << "\n";
     std::cerr << "Bases kept:\t" << s_numBasesKept << " (" << (double)s_numBasesKept / (double)s_numBasesRead << ")\n";
     std::cerr << "Number of incorrectly paired reads that were discarded: " << s_numInvalidPE << "\n";
-    delete pTimer;
+
     return 0;
 }
 
