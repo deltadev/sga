@@ -28,7 +28,7 @@ SUBPROGRAM " Version " PACKAGE_VERSION "\n"
 static const char *SR_USAGE_MESSAGE =
 "Usage: " PACKAGE_NAME " " SUBPROGRAM " [OPTION] READS_FILE\n"
 "Sample reads from READS_FILE with a given probability\n"
-"Useful for downsapling to a lower coverage and for randomly splitting reads into two files\n"
+"Useful for downsampling to a lower coverage and for randomly splitting reads into two files\n"
 "\n"
 "      --help                           display this help and exit\n"
 "      -v, --verbose                    display verbose output\n"
@@ -59,7 +59,7 @@ static const struct option longopts[] = {
     { "out",                    required_argument, NULL, 'o' },
     { "probability",            required_argument, NULL, 'p' },
     { "pe-mode",                required_argument, NULL, OPT_PEMODE },
-    { "discard",            required_argument, NULL, 'd' },
+    { "discard",                required_argument, NULL, 'd' },
     { "help",                   no_argument,       NULL, OPT_HELP },
     { "version",                no_argument,       NULL, OPT_VERSION },
     { NULL, 0, NULL, 0 }

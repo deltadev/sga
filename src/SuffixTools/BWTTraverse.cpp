@@ -26,7 +26,7 @@ void BWTTraverse::extract(const BWT* pBWT, unsigned int len)
         // Initialize the stack and rev_str
         BWTInterval range;
         BWTAlgorithms::initInterval(range, base_char, pBWT);
-        AlphaCount ext = BWTAlgorithms::getExtCount(range, pBWT);
+        AlphaCount64 ext = BWTAlgorithms::getExtCount(range, pBWT);
         stack.push(TraverseElem(range, ext));
         rev_str.append(1, base_char);
 
@@ -62,7 +62,7 @@ void BWTTraverse::extract(const BWT* pBWT, unsigned int len)
                 char b = curr.getCurrChar();
                 BWTInterval subrange = curr.getRange();
                 BWTAlgorithms::updateInterval(subrange, b, pBWT);
-                AlphaCount subext = BWTAlgorithms::getExtCount(subrange, pBWT);
+                AlphaCount64 subext = BWTAlgorithms::getExtCount(subrange, pBWT);
                 stack.push(TraverseElem(subrange, subext));
                 rev_str.append(1, b);
             }
@@ -72,7 +72,7 @@ void BWTTraverse::extract(const BWT* pBWT, unsigned int len)
     std::cerr << "Num output: " << output_count << " num iterations: " << iter_count << " count/len: " << (double)iter_count / len << "\n";
 }
 
-void BWTTraverse::extractSG(const BWT* pBWT, const BWT* pRevBWT, const unsigned int len)
+void BWTTraverse::extractSG(const BWT* pBWT, const BWT* pRevBWT, unsigned int len)
 {
     WARN_ONCE("Skipping bwt[0]");
     // Keep a bool vector marking which entries in pBWT have been visited
@@ -135,7 +135,7 @@ void BWTTraverse::extendRight(const unsigned int len, std::string& str, bool_vec
     bool done = false;
     while(!done)
     {
-        AlphaCount ext_counts = BWTAlgorithms::getExtCount(ranges.interval[1], pRevBWT);
+        AlphaCount64 ext_counts = BWTAlgorithms::getExtCount(ranges.interval[1], pRevBWT);
 
         if(ext_counts.hasUniqueDNAChar())
         {
@@ -148,7 +148,7 @@ void BWTTraverse::extendRight(const unsigned int len, std::string& str, bool_vec
 
             // Get the count of bases back to the ending sequence of seed
             // We do this in the opposite direction of extension
-            AlphaCount back_count = BWTAlgorithms::calculateExactExtensions(overlapLen, reverse(back_search), pRevBWT, pBWT);
+            AlphaCount64 back_count = BWTAlgorithms::calculateExactExtensions(overlapLen, reverse(back_search), pRevBWT, pBWT);
 
             if(back_count.hasUniqueDNAChar())
             {
