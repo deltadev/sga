@@ -9,6 +9,43 @@
 /* Begin PBXBuildFile section */
 		22B8153918AE3B070053479B /* sga.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22B8153818AE3B070053479B /* sga.1 */; };
 		22C1937818AEC9F90078A55F /* libbamtools.2.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */; };
+		22CA102618BB6CD200A5B553 /* assemble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE318BB6CD200A5B553 /* assemble.cpp */; };
+		22CA102718BB6CD200A5B553 /* bwt2fa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE518BB6CD200A5B553 /* bwt2fa.cpp */; };
+		22CA102818BB6CD200A5B553 /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE718BB6CD200A5B553 /* cluster.cpp */; };
+		22CA102918BB6CD200A5B553 /* connect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE918BB6CD200A5B553 /* connect.cpp */; };
+		22CA102A18BB6CD200A5B553 /* correct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FEB18BB6CD200A5B553 /* correct.cpp */; };
+		22CA102B18BB6CD200A5B553 /* correct_trio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FED18BB6CD200A5B553 /* correct_trio.cpp */; };
+		22CA102C18BB6CD200A5B553 /* extract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FEF18BB6CD200A5B553 /* extract.cpp */; };
+		22CA102D18BB6CD200A5B553 /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FF118BB6CD200A5B553 /* filter.cpp */; };
+		22CA102E18BB6CD200A5B553 /* filterBAM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FF318BB6CD200A5B553 /* filterBAM.cpp */; };
+		22CA102F18BB6CD200A5B553 /* fm-merge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FF518BB6CD200A5B553 /* fm-merge.cpp */; };
+		22CA103018BB6CD200A5B553 /* gapfill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FF718BB6CD200A5B553 /* gapfill.cpp */; };
+		22CA103118BB6CD200A5B553 /* gen-ssa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FF918BB6CD200A5B553 /* gen-ssa.cpp */; };
+		22CA103218BB6CD200A5B553 /* gmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FFB18BB6CD200A5B553 /* gmap.cpp */; };
+		22CA103318BB6CD200A5B553 /* graph-diff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FFD18BB6CD200A5B553 /* graph-diff.cpp */; };
+		22CA103418BB6CD200A5B553 /* haplotype-filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FFF18BB6CD200A5B553 /* haplotype-filter.cpp */; };
+		22CA103518BB6CD200A5B553 /* index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100118BB6CD200A5B553 /* index.cpp */; };
+		22CA103618BB6CD200A5B553 /* merge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100418BB6CD200A5B553 /* merge.cpp */; };
+		22CA103718BB6CD200A5B553 /* overlap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100618BB6CD200A5B553 /* overlap.cpp */; };
+		22CA103818BB6CD200A5B553 /* OverlapCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100818BB6CD200A5B553 /* OverlapCommon.cpp */; };
+		22CA103918BB6CD200A5B553 /* oview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100A18BB6CD200A5B553 /* oview.cpp */; };
+		22CA103A18BB6CD200A5B553 /* PCR-pair-removal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100C18BB6CD200A5B553 /* PCR-pair-removal.cpp */; };
+		22CA103B18BB6CD200A5B553 /* preprocess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA100E18BB6CD200A5B553 /* preprocess.cpp */; };
+		22CA103C18BB6CD200A5B553 /* preqc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101018BB6CD200A5B553 /* preqc.cpp */; };
+		22CA103D18BB6CD200A5B553 /* rewrite-evidence-bam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101218BB6CD200A5B553 /* rewrite-evidence-bam.cpp */; };
+		22CA103E18BB6CD200A5B553 /* rmdup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101418BB6CD200A5B553 /* rmdup.cpp */; };
+		22CA103F18BB6CD200A5B553 /* sample-reads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101618BB6CD200A5B553 /* sample-reads.cpp */; };
+		22CA104018BB6CD200A5B553 /* scaffold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101818BB6CD200A5B553 /* scaffold.cpp */; };
+		22CA104118BB6CD200A5B553 /* scaffold2fasta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101A18BB6CD200A5B553 /* scaffold2fasta.cpp */; };
+		22CA104218BB6CD200A5B553 /* sga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101C18BB6CD200A5B553 /* sga.cpp */; };
+		22CA104318BB6CD200A5B553 /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA101E18BB6CD200A5B553 /* stats.cpp */; };
+		22CA104418BB6CD200A5B553 /* subgraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA102018BB6CD200A5B553 /* subgraph.cpp */; };
+		22CA104518BB6CD200A5B553 /* variant-detectability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA102218BB6CD200A5B553 /* variant-detectability.cpp */; };
+		22CA104618BB6CD200A5B553 /* walk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA102418BB6CD200A5B553 /* walk.cpp */; };
+		22CA104D18BB73AC00A5B553 /* MapBWTPairing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA104718BB73AC00A5B553 /* MapBWTPairing.cpp */; };
+		22CA104E18BB73AC00A5B553 /* RemovePCRDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA104918BB73AC00A5B553 /* RemovePCRDuplicates.cpp */; };
+		22CA104F18BB73AC00A5B553 /* TrioCorrectProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA104B18BB73AC00A5B553 /* TrioCorrectProcess.cpp */; };
+		22CA105118BB7FF000A5B553 /* BWTTraverse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AEE18AE3BED00E95319 /* BWTTraverse.cpp */; };
 		22E92B8718AE3BED00E95319 /* ClusterProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A0A18AE3BED00E95319 /* ClusterProcess.cpp */; };
 		22E92B8818AE3BED00E95319 /* ConnectProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A0C18AE3BED00E95319 /* ConnectProcess.cpp */; };
 		22E92B8918AE3BED00E95319 /* DPAlignment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A0E18AE3BED00E95319 /* DPAlignment.cpp */; };
@@ -59,35 +96,6 @@
 		22E92BB618AE3BED00E95319 /* ScaffoldVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A7C18AE3BED00E95319 /* ScaffoldVertex.cpp */; };
 		22E92BB718AE3BED00E95319 /* ScaffoldVisitors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A7E18AE3BED00E95319 /* ScaffoldVisitors.cpp */; };
 		22E92BB818AE3BED00E95319 /* ScaffoldWalk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8018AE3BED00E95319 /* ScaffoldWalk.cpp */; };
-		22E92BB918AE3BED00E95319 /* assemble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8318AE3BED00E95319 /* assemble.cpp */; };
-		22E92BBA18AE3BED00E95319 /* bwt2fa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8518AE3BED00E95319 /* bwt2fa.cpp */; };
-		22E92BBB18AE3BED00E95319 /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8718AE3BED00E95319 /* cluster.cpp */; };
-		22E92BBC18AE3BED00E95319 /* connect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8918AE3BED00E95319 /* connect.cpp */; };
-		22E92BBD18AE3BED00E95319 /* correct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8B18AE3BED00E95319 /* correct.cpp */; };
-		22E92BBF18AE3BED00E95319 /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A8F18AE3BED00E95319 /* filter.cpp */; };
-		22E92BC018AE3BED00E95319 /* filterBAM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9118AE3BED00E95319 /* filterBAM.cpp */; };
-		22E92BC118AE3BED00E95319 /* fm-merge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9318AE3BED00E95319 /* fm-merge.cpp */; };
-		22E92BC218AE3BED00E95319 /* gapfill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9518AE3BED00E95319 /* gapfill.cpp */; };
-		22E92BC318AE3BED00E95319 /* gen-ssa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9718AE3BED00E95319 /* gen-ssa.cpp */; };
-		22E92BC418AE3BED00E95319 /* gmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9918AE3BED00E95319 /* gmap.cpp */; };
-		22E92BC518AE3BED00E95319 /* graph-diff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9B18AE3BED00E95319 /* graph-diff.cpp */; };
-		22E92BC618AE3BED00E95319 /* haplotype-filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9D18AE3BED00E95319 /* haplotype-filter.cpp */; };
-		22E92BC718AE3BED00E95319 /* index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A9F18AE3BED00E95319 /* index.cpp */; };
-		22E92BC818AE3BED00E95319 /* merge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AA318AE3BED00E95319 /* merge.cpp */; };
-		22E92BC918AE3BED00E95319 /* overlap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AA518AE3BED00E95319 /* overlap.cpp */; };
-		22E92BCA18AE3BED00E95319 /* OverlapCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AA718AE3BED00E95319 /* OverlapCommon.cpp */; };
-		22E92BCB18AE3BED00E95319 /* oview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AA918AE3BED00E95319 /* oview.cpp */; };
-		22E92BCC18AE3BED00E95319 /* preprocess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AAB18AE3BED00E95319 /* preprocess.cpp */; };
-		22E92BCD18AE3BED00E95319 /* preqc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AAD18AE3BED00E95319 /* preqc.cpp */; };
-		22E92BCE18AE3BED00E95319 /* rewrite-evidence-bam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AAF18AE3BED00E95319 /* rewrite-evidence-bam.cpp */; };
-		22E92BCF18AE3BED00E95319 /* rmdup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AB118AE3BED00E95319 /* rmdup.cpp */; };
-		22E92BD018AE3BED00E95319 /* scaffold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AB318AE3BED00E95319 /* scaffold.cpp */; };
-		22E92BD118AE3BED00E95319 /* scaffold2fasta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AB518AE3BED00E95319 /* scaffold2fasta.cpp */; };
-		22E92BD218AE3BED00E95319 /* sga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AB718AE3BED00E95319 /* sga.cpp */; };
-		22E92BD318AE3BED00E95319 /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AB918AE3BED00E95319 /* stats.cpp */; };
-		22E92BD418AE3BED00E95319 /* subgraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92ABB18AE3BED00E95319 /* subgraph.cpp */; };
-		22E92BD518AE3BED00E95319 /* variant-detectability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92ABD18AE3BED00E95319 /* variant-detectability.cpp */; };
-		22E92BD618AE3BED00E95319 /* walk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92ABF18AE3BED00E95319 /* walk.cpp */; };
 		22E92BD718AE3BED00E95319 /* ASQG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AC218AE3BED00E95319 /* ASQG.cpp */; };
 		22E92BD818AE3BED00E95319 /* SQG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AC618AE3BED00E95319 /* SQG.cpp */; };
 		22E92BD918AE3BED00E95319 /* CompleteOverlapSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92AC918AE3BED00E95319 /* CompleteOverlapSet.cpp */; };
@@ -189,7 +197,80 @@
 		22B8153318AE3B070053479B /* sga */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sga; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B8153818AE3B070053479B /* sga.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sga.1; sourceTree = "<group>"; };
 		22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbamtools.2.3.0.dylib; path = ../../bamtools/lib/Debug/libbamtools.2.3.0.dylib; sourceTree = "<group>"; };
-		22D6630E18B4F2EF001CAF81 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
+		22CA0FE318BB6CD200A5B553 /* assemble.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = assemble.cpp; sourceTree = "<group>"; };
+		22CA0FE418BB6CD200A5B553 /* assemble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assemble.h; sourceTree = "<group>"; };
+		22CA0FE518BB6CD200A5B553 /* bwt2fa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bwt2fa.cpp; sourceTree = "<group>"; };
+		22CA0FE618BB6CD200A5B553 /* bwt2fa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bwt2fa.h; sourceTree = "<group>"; };
+		22CA0FE718BB6CD200A5B553 /* cluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cluster.cpp; sourceTree = "<group>"; };
+		22CA0FE818BB6CD200A5B553 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
+		22CA0FE918BB6CD200A5B553 /* connect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connect.cpp; sourceTree = "<group>"; };
+		22CA0FEA18BB6CD200A5B553 /* connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connect.h; sourceTree = "<group>"; };
+		22CA0FEB18BB6CD200A5B553 /* correct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = correct.cpp; sourceTree = "<group>"; };
+		22CA0FEC18BB6CD200A5B553 /* correct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = correct.h; sourceTree = "<group>"; };
+		22CA0FED18BB6CD200A5B553 /* correct_trio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = correct_trio.cpp; sourceTree = "<group>"; };
+		22CA0FEE18BB6CD200A5B553 /* correct_trio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = correct_trio.h; sourceTree = "<group>"; };
+		22CA0FEF18BB6CD200A5B553 /* extract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extract.cpp; sourceTree = "<group>"; };
+		22CA0FF018BB6CD200A5B553 /* extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extract.h; sourceTree = "<group>"; };
+		22CA0FF118BB6CD200A5B553 /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filter.cpp; sourceTree = "<group>"; };
+		22CA0FF218BB6CD200A5B553 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		22CA0FF318BB6CD200A5B553 /* filterBAM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filterBAM.cpp; sourceTree = "<group>"; };
+		22CA0FF418BB6CD200A5B553 /* filterBAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterBAM.h; sourceTree = "<group>"; };
+		22CA0FF518BB6CD200A5B553 /* fm-merge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "fm-merge.cpp"; sourceTree = "<group>"; };
+		22CA0FF618BB6CD200A5B553 /* fm-merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fm-merge.h"; sourceTree = "<group>"; };
+		22CA0FF718BB6CD200A5B553 /* gapfill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gapfill.cpp; sourceTree = "<group>"; };
+		22CA0FF818BB6CD200A5B553 /* gapfill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gapfill.h; sourceTree = "<group>"; };
+		22CA0FF918BB6CD200A5B553 /* gen-ssa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gen-ssa.cpp"; sourceTree = "<group>"; };
+		22CA0FFA18BB6CD200A5B553 /* gen-ssa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gen-ssa.h"; sourceTree = "<group>"; };
+		22CA0FFB18BB6CD200A5B553 /* gmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gmap.cpp; sourceTree = "<group>"; };
+		22CA0FFC18BB6CD200A5B553 /* gmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmap.h; sourceTree = "<group>"; };
+		22CA0FFD18BB6CD200A5B553 /* graph-diff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "graph-diff.cpp"; sourceTree = "<group>"; };
+		22CA0FFE18BB6CD200A5B553 /* graph-diff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "graph-diff.h"; sourceTree = "<group>"; };
+		22CA0FFF18BB6CD200A5B553 /* haplotype-filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "haplotype-filter.cpp"; sourceTree = "<group>"; };
+		22CA100018BB6CD200A5B553 /* haplotype-filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "haplotype-filter.h"; sourceTree = "<group>"; };
+		22CA100118BB6CD200A5B553 /* index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = index.cpp; sourceTree = "<group>"; };
+		22CA100218BB6CD200A5B553 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
+		22CA100318BB6CD200A5B553 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		22CA100418BB6CD200A5B553 /* merge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = merge.cpp; sourceTree = "<group>"; };
+		22CA100518BB6CD200A5B553 /* merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = merge.h; sourceTree = "<group>"; };
+		22CA100618BB6CD200A5B553 /* overlap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = overlap.cpp; sourceTree = "<group>"; };
+		22CA100718BB6CD200A5B553 /* overlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overlap.h; sourceTree = "<group>"; };
+		22CA100818BB6CD200A5B553 /* OverlapCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OverlapCommon.cpp; sourceTree = "<group>"; };
+		22CA100918BB6CD200A5B553 /* OverlapCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlapCommon.h; sourceTree = "<group>"; };
+		22CA100A18BB6CD200A5B553 /* oview.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oview.cpp; sourceTree = "<group>"; };
+		22CA100B18BB6CD200A5B553 /* oview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oview.h; sourceTree = "<group>"; };
+		22CA100C18BB6CD200A5B553 /* PCR-pair-removal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "PCR-pair-removal.cpp"; sourceTree = "<group>"; };
+		22CA100D18BB6CD200A5B553 /* PCR-pair-removal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PCR-pair-removal.h"; sourceTree = "<group>"; };
+		22CA100E18BB6CD200A5B553 /* preprocess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preprocess.cpp; sourceTree = "<group>"; };
+		22CA100F18BB6CD200A5B553 /* preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preprocess.h; sourceTree = "<group>"; };
+		22CA101018BB6CD200A5B553 /* preqc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preqc.cpp; sourceTree = "<group>"; };
+		22CA101118BB6CD200A5B553 /* preqc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preqc.h; sourceTree = "<group>"; };
+		22CA101218BB6CD200A5B553 /* rewrite-evidence-bam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rewrite-evidence-bam.cpp"; sourceTree = "<group>"; };
+		22CA101318BB6CD200A5B553 /* rewrite-evidence-bam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rewrite-evidence-bam.h"; sourceTree = "<group>"; };
+		22CA101418BB6CD200A5B553 /* rmdup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rmdup.cpp; sourceTree = "<group>"; };
+		22CA101518BB6CD200A5B553 /* rmdup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rmdup.h; sourceTree = "<group>"; };
+		22CA101618BB6CD200A5B553 /* sample-reads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "sample-reads.cpp"; sourceTree = "<group>"; };
+		22CA101718BB6CD200A5B553 /* sample-reads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sample-reads.h"; sourceTree = "<group>"; };
+		22CA101818BB6CD200A5B553 /* scaffold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scaffold.cpp; sourceTree = "<group>"; };
+		22CA101918BB6CD200A5B553 /* scaffold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scaffold.h; sourceTree = "<group>"; };
+		22CA101A18BB6CD200A5B553 /* scaffold2fasta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scaffold2fasta.cpp; sourceTree = "<group>"; };
+		22CA101B18BB6CD200A5B553 /* scaffold2fasta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scaffold2fasta.h; sourceTree = "<group>"; };
+		22CA101C18BB6CD200A5B553 /* sga.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sga.cpp; sourceTree = "<group>"; };
+		22CA101D18BB6CD200A5B553 /* SGACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGACommon.h; sourceTree = "<group>"; };
+		22CA101E18BB6CD200A5B553 /* stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stats.cpp; sourceTree = "<group>"; };
+		22CA101F18BB6CD200A5B553 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
+		22CA102018BB6CD200A5B553 /* subgraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subgraph.cpp; sourceTree = "<group>"; };
+		22CA102118BB6CD200A5B553 /* subgraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subgraph.h; sourceTree = "<group>"; };
+		22CA102218BB6CD200A5B553 /* variant-detectability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "variant-detectability.cpp"; sourceTree = "<group>"; };
+		22CA102318BB6CD200A5B553 /* variant-detectability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "variant-detectability.h"; sourceTree = "<group>"; };
+		22CA102418BB6CD200A5B553 /* walk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = walk.cpp; sourceTree = "<group>"; };
+		22CA102518BB6CD200A5B553 /* walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = walk.h; sourceTree = "<group>"; };
+		22CA104718BB73AC00A5B553 /* MapBWTPairing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapBWTPairing.cpp; sourceTree = "<group>"; };
+		22CA104818BB73AC00A5B553 /* MapBWTPairing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBWTPairing.h; sourceTree = "<group>"; };
+		22CA104918BB73AC00A5B553 /* RemovePCRDuplicates.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RemovePCRDuplicates.cpp; sourceTree = "<group>"; };
+		22CA104A18BB73AC00A5B553 /* RemovePCRDuplicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemovePCRDuplicates.h; sourceTree = "<group>"; };
+		22CA104B18BB73AC00A5B553 /* TrioCorrectProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrioCorrectProcess.cpp; sourceTree = "<group>"; };
+		22CA104C18BB73AC00A5B553 /* TrioCorrectProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrioCorrectProcess.h; sourceTree = "<group>"; };
+		22CA105018BB7B9300A5B553 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../src/config.h; sourceTree = "<group>"; };
 		22E92A0A18AE3BED00E95319 /* ClusterProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClusterProcess.cpp; sourceTree = "<group>"; };
 		22E92A0B18AE3BED00E95319 /* ClusterProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterProcess.h; sourceTree = "<group>"; };
 		22E92A0C18AE3BED00E95319 /* ConnectProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectProcess.cpp; sourceTree = "<group>"; };
@@ -306,68 +387,6 @@
 		22E92A7F18AE3BED00E95319 /* ScaffoldVisitors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaffoldVisitors.h; sourceTree = "<group>"; };
 		22E92A8018AE3BED00E95319 /* ScaffoldWalk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScaffoldWalk.cpp; sourceTree = "<group>"; };
 		22E92A8118AE3BED00E95319 /* ScaffoldWalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaffoldWalk.h; sourceTree = "<group>"; };
-		22E92A8318AE3BED00E95319 /* assemble.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = assemble.cpp; sourceTree = "<group>"; };
-		22E92A8418AE3BED00E95319 /* assemble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assemble.h; sourceTree = "<group>"; };
-		22E92A8518AE3BED00E95319 /* bwt2fa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bwt2fa.cpp; sourceTree = "<group>"; };
-		22E92A8618AE3BED00E95319 /* bwt2fa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bwt2fa.h; sourceTree = "<group>"; };
-		22E92A8718AE3BED00E95319 /* cluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cluster.cpp; sourceTree = "<group>"; };
-		22E92A8818AE3BED00E95319 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
-		22E92A8918AE3BED00E95319 /* connect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connect.cpp; sourceTree = "<group>"; };
-		22E92A8A18AE3BED00E95319 /* connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connect.h; sourceTree = "<group>"; };
-		22E92A8B18AE3BED00E95319 /* correct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = correct.cpp; sourceTree = "<group>"; };
-		22E92A8C18AE3BED00E95319 /* correct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = correct.h; sourceTree = "<group>"; };
-		22E92A8D18AE3BED00E95319 /* extract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extract.cpp; sourceTree = "<group>"; };
-		22E92A8E18AE3BED00E95319 /* extract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extract.h; sourceTree = "<group>"; };
-		22E92A8F18AE3BED00E95319 /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filter.cpp; sourceTree = "<group>"; };
-		22E92A9018AE3BED00E95319 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
-		22E92A9118AE3BED00E95319 /* filterBAM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filterBAM.cpp; sourceTree = "<group>"; };
-		22E92A9218AE3BED00E95319 /* filterBAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterBAM.h; sourceTree = "<group>"; };
-		22E92A9318AE3BED00E95319 /* fm-merge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "fm-merge.cpp"; sourceTree = "<group>"; };
-		22E92A9418AE3BED00E95319 /* fm-merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fm-merge.h"; sourceTree = "<group>"; };
-		22E92A9518AE3BED00E95319 /* gapfill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gapfill.cpp; sourceTree = "<group>"; };
-		22E92A9618AE3BED00E95319 /* gapfill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gapfill.h; sourceTree = "<group>"; };
-		22E92A9718AE3BED00E95319 /* gen-ssa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gen-ssa.cpp"; sourceTree = "<group>"; };
-		22E92A9818AE3BED00E95319 /* gen-ssa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gen-ssa.h"; sourceTree = "<group>"; };
-		22E92A9918AE3BED00E95319 /* gmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gmap.cpp; sourceTree = "<group>"; };
-		22E92A9A18AE3BED00E95319 /* gmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmap.h; sourceTree = "<group>"; };
-		22E92A9B18AE3BED00E95319 /* graph-diff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "graph-diff.cpp"; sourceTree = "<group>"; };
-		22E92A9C18AE3BED00E95319 /* graph-diff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "graph-diff.h"; sourceTree = "<group>"; };
-		22E92A9D18AE3BED00E95319 /* haplotype-filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "haplotype-filter.cpp"; sourceTree = "<group>"; };
-		22E92A9E18AE3BED00E95319 /* haplotype-filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "haplotype-filter.h"; sourceTree = "<group>"; };
-		22E92A9F18AE3BED00E95319 /* index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = index.cpp; sourceTree = "<group>"; };
-		22E92AA018AE3BED00E95319 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
-		22E92AA118AE3BED00E95319 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
-		22E92AA218AE3BED00E95319 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
-		22E92AA318AE3BED00E95319 /* merge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = merge.cpp; sourceTree = "<group>"; };
-		22E92AA418AE3BED00E95319 /* merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = merge.h; sourceTree = "<group>"; };
-		22E92AA518AE3BED00E95319 /* overlap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = overlap.cpp; sourceTree = "<group>"; };
-		22E92AA618AE3BED00E95319 /* overlap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overlap.h; sourceTree = "<group>"; };
-		22E92AA718AE3BED00E95319 /* OverlapCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OverlapCommon.cpp; sourceTree = "<group>"; };
-		22E92AA818AE3BED00E95319 /* OverlapCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlapCommon.h; sourceTree = "<group>"; };
-		22E92AA918AE3BED00E95319 /* oview.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oview.cpp; sourceTree = "<group>"; };
-		22E92AAA18AE3BED00E95319 /* oview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oview.h; sourceTree = "<group>"; };
-		22E92AAB18AE3BED00E95319 /* preprocess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preprocess.cpp; sourceTree = "<group>"; };
-		22E92AAC18AE3BED00E95319 /* preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preprocess.h; sourceTree = "<group>"; };
-		22E92AAD18AE3BED00E95319 /* preqc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preqc.cpp; sourceTree = "<group>"; };
-		22E92AAE18AE3BED00E95319 /* preqc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preqc.h; sourceTree = "<group>"; };
-		22E92AAF18AE3BED00E95319 /* rewrite-evidence-bam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rewrite-evidence-bam.cpp"; sourceTree = "<group>"; };
-		22E92AB018AE3BED00E95319 /* rewrite-evidence-bam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rewrite-evidence-bam.h"; sourceTree = "<group>"; };
-		22E92AB118AE3BED00E95319 /* rmdup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rmdup.cpp; sourceTree = "<group>"; };
-		22E92AB218AE3BED00E95319 /* rmdup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rmdup.h; sourceTree = "<group>"; };
-		22E92AB318AE3BED00E95319 /* scaffold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scaffold.cpp; sourceTree = "<group>"; };
-		22E92AB418AE3BED00E95319 /* scaffold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scaffold.h; sourceTree = "<group>"; };
-		22E92AB518AE3BED00E95319 /* scaffold2fasta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scaffold2fasta.cpp; sourceTree = "<group>"; };
-		22E92AB618AE3BED00E95319 /* scaffold2fasta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scaffold2fasta.h; sourceTree = "<group>"; };
-		22E92AB718AE3BED00E95319 /* sga.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sga.cpp; sourceTree = "<group>"; };
-		22E92AB818AE3BED00E95319 /* SGACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGACommon.h; sourceTree = "<group>"; };
-		22E92AB918AE3BED00E95319 /* stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stats.cpp; sourceTree = "<group>"; };
-		22E92ABA18AE3BED00E95319 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
-		22E92ABB18AE3BED00E95319 /* subgraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subgraph.cpp; sourceTree = "<group>"; };
-		22E92ABC18AE3BED00E95319 /* subgraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subgraph.h; sourceTree = "<group>"; };
-		22E92ABD18AE3BED00E95319 /* variant-detectability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "variant-detectability.cpp"; sourceTree = "<group>"; };
-		22E92ABE18AE3BED00E95319 /* variant-detectability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "variant-detectability.h"; sourceTree = "<group>"; };
-		22E92ABF18AE3BED00E95319 /* walk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = walk.cpp; sourceTree = "<group>"; };
-		22E92AC018AE3BED00E95319 /* walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = walk.h; sourceTree = "<group>"; };
 		22E92AC218AE3BED00E95319 /* ASQG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ASQG.cpp; sourceTree = "<group>"; };
 		22E92AC318AE3BED00E95319 /* ASQG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASQG.h; sourceTree = "<group>"; };
 		22E92AC418AE3BED00E95319 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
@@ -590,7 +609,7 @@
 		22B8152A18AE3B070053479B = {
 			isa = PBXGroup;
 			children = (
-				22D6630E18B4F2EF001CAF81 /* config.h */,
+				22CA105018BB7B9300A5B553 /* config.h */,
 				22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */,
 				22EAE88618AE518A0006AB7A /* libz.dylib */,
 				22EAE88418AE50F40006AB7A /* libbamtools-utils.a */,
@@ -600,7 +619,7 @@
 				22E92A4218AE3BED00E95319 /* Concurrency */,
 				22E92A4D18AE3BED00E95319 /* GraphDiff */,
 				22E92A6918AE3BED00E95319 /* Scaffold */,
-				22E92A8218AE3BED00E95319 /* SGA */,
+				22CA0FE218BB6CD200A5B553 /* SGA */,
 				22E92AC118AE3BED00E95319 /* SQG */,
 				22E92AC818AE3BED00E95319 /* StringGraph */,
 				22E92ADA18AE3BED00E95319 /* SuffixTools */,
@@ -629,9 +648,90 @@
 			path = sga;
 			sourceTree = "<group>";
 		};
+		22CA0FE218BB6CD200A5B553 /* SGA */ = {
+			isa = PBXGroup;
+			children = (
+				22CA0FE318BB6CD200A5B553 /* assemble.cpp */,
+				22CA0FE418BB6CD200A5B553 /* assemble.h */,
+				22CA0FE518BB6CD200A5B553 /* bwt2fa.cpp */,
+				22CA0FE618BB6CD200A5B553 /* bwt2fa.h */,
+				22CA0FE718BB6CD200A5B553 /* cluster.cpp */,
+				22CA0FE818BB6CD200A5B553 /* cluster.h */,
+				22CA0FE918BB6CD200A5B553 /* connect.cpp */,
+				22CA0FEA18BB6CD200A5B553 /* connect.h */,
+				22CA0FEB18BB6CD200A5B553 /* correct.cpp */,
+				22CA0FEC18BB6CD200A5B553 /* correct.h */,
+				22CA0FED18BB6CD200A5B553 /* correct_trio.cpp */,
+				22CA0FEE18BB6CD200A5B553 /* correct_trio.h */,
+				22CA0FEF18BB6CD200A5B553 /* extract.cpp */,
+				22CA0FF018BB6CD200A5B553 /* extract.h */,
+				22CA0FF118BB6CD200A5B553 /* filter.cpp */,
+				22CA0FF218BB6CD200A5B553 /* filter.h */,
+				22CA0FF318BB6CD200A5B553 /* filterBAM.cpp */,
+				22CA0FF418BB6CD200A5B553 /* filterBAM.h */,
+				22CA0FF518BB6CD200A5B553 /* fm-merge.cpp */,
+				22CA0FF618BB6CD200A5B553 /* fm-merge.h */,
+				22CA0FF718BB6CD200A5B553 /* gapfill.cpp */,
+				22CA0FF818BB6CD200A5B553 /* gapfill.h */,
+				22CA0FF918BB6CD200A5B553 /* gen-ssa.cpp */,
+				22CA0FFA18BB6CD200A5B553 /* gen-ssa.h */,
+				22CA0FFB18BB6CD200A5B553 /* gmap.cpp */,
+				22CA0FFC18BB6CD200A5B553 /* gmap.h */,
+				22CA0FFD18BB6CD200A5B553 /* graph-diff.cpp */,
+				22CA0FFE18BB6CD200A5B553 /* graph-diff.h */,
+				22CA0FFF18BB6CD200A5B553 /* haplotype-filter.cpp */,
+				22CA100018BB6CD200A5B553 /* haplotype-filter.h */,
+				22CA100118BB6CD200A5B553 /* index.cpp */,
+				22CA100218BB6CD200A5B553 /* index.h */,
+				22CA100318BB6CD200A5B553 /* Makefile.am */,
+				22CA100418BB6CD200A5B553 /* merge.cpp */,
+				22CA100518BB6CD200A5B553 /* merge.h */,
+				22CA100618BB6CD200A5B553 /* overlap.cpp */,
+				22CA100718BB6CD200A5B553 /* overlap.h */,
+				22CA100818BB6CD200A5B553 /* OverlapCommon.cpp */,
+				22CA100918BB6CD200A5B553 /* OverlapCommon.h */,
+				22CA100A18BB6CD200A5B553 /* oview.cpp */,
+				22CA100B18BB6CD200A5B553 /* oview.h */,
+				22CA100C18BB6CD200A5B553 /* PCR-pair-removal.cpp */,
+				22CA100D18BB6CD200A5B553 /* PCR-pair-removal.h */,
+				22CA100E18BB6CD200A5B553 /* preprocess.cpp */,
+				22CA100F18BB6CD200A5B553 /* preprocess.h */,
+				22CA101018BB6CD200A5B553 /* preqc.cpp */,
+				22CA101118BB6CD200A5B553 /* preqc.h */,
+				22CA101218BB6CD200A5B553 /* rewrite-evidence-bam.cpp */,
+				22CA101318BB6CD200A5B553 /* rewrite-evidence-bam.h */,
+				22CA101418BB6CD200A5B553 /* rmdup.cpp */,
+				22CA101518BB6CD200A5B553 /* rmdup.h */,
+				22CA101618BB6CD200A5B553 /* sample-reads.cpp */,
+				22CA101718BB6CD200A5B553 /* sample-reads.h */,
+				22CA101818BB6CD200A5B553 /* scaffold.cpp */,
+				22CA101918BB6CD200A5B553 /* scaffold.h */,
+				22CA101A18BB6CD200A5B553 /* scaffold2fasta.cpp */,
+				22CA101B18BB6CD200A5B553 /* scaffold2fasta.h */,
+				22CA101C18BB6CD200A5B553 /* sga.cpp */,
+				22CA101D18BB6CD200A5B553 /* SGACommon.h */,
+				22CA101E18BB6CD200A5B553 /* stats.cpp */,
+				22CA101F18BB6CD200A5B553 /* stats.h */,
+				22CA102018BB6CD200A5B553 /* subgraph.cpp */,
+				22CA102118BB6CD200A5B553 /* subgraph.h */,
+				22CA102218BB6CD200A5B553 /* variant-detectability.cpp */,
+				22CA102318BB6CD200A5B553 /* variant-detectability.h */,
+				22CA102418BB6CD200A5B553 /* walk.cpp */,
+				22CA102518BB6CD200A5B553 /* walk.h */,
+			);
+			name = SGA;
+			path = ../src/SGA;
+			sourceTree = "<group>";
+		};
 		22E92A0918AE3BED00E95319 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				22CA104718BB73AC00A5B553 /* MapBWTPairing.cpp */,
+				22CA104818BB73AC00A5B553 /* MapBWTPairing.h */,
+				22CA104918BB73AC00A5B553 /* RemovePCRDuplicates.cpp */,
+				22CA104A18BB73AC00A5B553 /* RemovePCRDuplicates.h */,
+				22CA104B18BB73AC00A5B553 /* TrioCorrectProcess.cpp */,
+				22CA104C18BB73AC00A5B553 /* TrioCorrectProcess.h */,
 				22E92A0A18AE3BED00E95319 /* ClusterProcess.cpp */,
 				22E92A0B18AE3BED00E95319 /* ClusterProcess.h */,
 				22E92A0C18AE3BED00E95319 /* ConnectProcess.cpp */,
@@ -783,76 +883,6 @@
 			);
 			name = Scaffold;
 			path = ../src/Scaffold;
-			sourceTree = "<group>";
-		};
-		22E92A8218AE3BED00E95319 /* SGA */ = {
-			isa = PBXGroup;
-			children = (
-				22E92A8318AE3BED00E95319 /* assemble.cpp */,
-				22E92A8418AE3BED00E95319 /* assemble.h */,
-				22E92A8518AE3BED00E95319 /* bwt2fa.cpp */,
-				22E92A8618AE3BED00E95319 /* bwt2fa.h */,
-				22E92A8718AE3BED00E95319 /* cluster.cpp */,
-				22E92A8818AE3BED00E95319 /* cluster.h */,
-				22E92A8918AE3BED00E95319 /* connect.cpp */,
-				22E92A8A18AE3BED00E95319 /* connect.h */,
-				22E92A8B18AE3BED00E95319 /* correct.cpp */,
-				22E92A8C18AE3BED00E95319 /* correct.h */,
-				22E92A8D18AE3BED00E95319 /* extract.cpp */,
-				22E92A8E18AE3BED00E95319 /* extract.h */,
-				22E92A8F18AE3BED00E95319 /* filter.cpp */,
-				22E92A9018AE3BED00E95319 /* filter.h */,
-				22E92A9118AE3BED00E95319 /* filterBAM.cpp */,
-				22E92A9218AE3BED00E95319 /* filterBAM.h */,
-				22E92A9318AE3BED00E95319 /* fm-merge.cpp */,
-				22E92A9418AE3BED00E95319 /* fm-merge.h */,
-				22E92A9518AE3BED00E95319 /* gapfill.cpp */,
-				22E92A9618AE3BED00E95319 /* gapfill.h */,
-				22E92A9718AE3BED00E95319 /* gen-ssa.cpp */,
-				22E92A9818AE3BED00E95319 /* gen-ssa.h */,
-				22E92A9918AE3BED00E95319 /* gmap.cpp */,
-				22E92A9A18AE3BED00E95319 /* gmap.h */,
-				22E92A9B18AE3BED00E95319 /* graph-diff.cpp */,
-				22E92A9C18AE3BED00E95319 /* graph-diff.h */,
-				22E92A9D18AE3BED00E95319 /* haplotype-filter.cpp */,
-				22E92A9E18AE3BED00E95319 /* haplotype-filter.h */,
-				22E92A9F18AE3BED00E95319 /* index.cpp */,
-				22E92AA018AE3BED00E95319 /* index.h */,
-				22E92AA118AE3BED00E95319 /* Makefile.am */,
-				22E92AA218AE3BED00E95319 /* Makefile.in */,
-				22E92AA318AE3BED00E95319 /* merge.cpp */,
-				22E92AA418AE3BED00E95319 /* merge.h */,
-				22E92AA518AE3BED00E95319 /* overlap.cpp */,
-				22E92AA618AE3BED00E95319 /* overlap.h */,
-				22E92AA718AE3BED00E95319 /* OverlapCommon.cpp */,
-				22E92AA818AE3BED00E95319 /* OverlapCommon.h */,
-				22E92AA918AE3BED00E95319 /* oview.cpp */,
-				22E92AAA18AE3BED00E95319 /* oview.h */,
-				22E92AAB18AE3BED00E95319 /* preprocess.cpp */,
-				22E92AAC18AE3BED00E95319 /* preprocess.h */,
-				22E92AAD18AE3BED00E95319 /* preqc.cpp */,
-				22E92AAE18AE3BED00E95319 /* preqc.h */,
-				22E92AAF18AE3BED00E95319 /* rewrite-evidence-bam.cpp */,
-				22E92AB018AE3BED00E95319 /* rewrite-evidence-bam.h */,
-				22E92AB118AE3BED00E95319 /* rmdup.cpp */,
-				22E92AB218AE3BED00E95319 /* rmdup.h */,
-				22E92AB318AE3BED00E95319 /* scaffold.cpp */,
-				22E92AB418AE3BED00E95319 /* scaffold.h */,
-				22E92AB518AE3BED00E95319 /* scaffold2fasta.cpp */,
-				22E92AB618AE3BED00E95319 /* scaffold2fasta.h */,
-				22E92AB718AE3BED00E95319 /* sga.cpp */,
-				22E92AB818AE3BED00E95319 /* SGACommon.h */,
-				22E92AB918AE3BED00E95319 /* stats.cpp */,
-				22E92ABA18AE3BED00E95319 /* stats.h */,
-				22E92ABB18AE3BED00E95319 /* subgraph.cpp */,
-				22E92ABC18AE3BED00E95319 /* subgraph.h */,
-				22E92ABD18AE3BED00E95319 /* variant-detectability.cpp */,
-				22E92ABE18AE3BED00E95319 /* variant-detectability.h */,
-				22E92ABF18AE3BED00E95319 /* walk.cpp */,
-				22E92AC018AE3BED00E95319 /* walk.h */,
-			);
-			name = SGA;
-			path = ../src/SGA;
 			sourceTree = "<group>";
 		};
 		22E92AC118AE3BED00E95319 /* SQG */ = {
@@ -1180,21 +1210,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CA105118BB7FF000A5B553 /* BWTTraverse.cpp in Sources */,
 				22E92BE618AE3BED00E95319 /* BWTReaderAscii.cpp in Sources */,
+				22CA104E18BB73AC00A5B553 /* RemovePCRDuplicates.cpp in Sources */,
 				22E92BA018AE3BED00E95319 /* OverlapProcess.cpp in Sources */,
 				22E92B9C18AE3BED00E95319 /* Bigraph.cpp in Sources */,
 				22E92BD818AE3BED00E95319 /* SQG.cpp in Sources */,
-				22E92BD018AE3BED00E95319 /* scaffold.cpp in Sources */,
-				22E92BD518AE3BED00E95319 /* variant-detectability.cpp in Sources */,
+				22CA102C18BB6CD200A5B553 /* extract.cpp in Sources */,
 				22E92B9E18AE3BED00E95319 /* EdgeDesc.cpp in Sources */,
 				22E92C0C18AE3BED00E95319 /* KmerDistribution.cpp in Sources */,
 				22E92C1118AE3BED00E95319 /* PrimerScreen.cpp in Sources */,
 				22E92BA218AE3BED00E95319 /* DBGPathGuide.cpp in Sources */,
 				22E92BAD18AE3BED00E95319 /* VCFTester.cpp in Sources */,
-				22E92BCD18AE3BED00E95319 /* preqc.cpp in Sources */,
+				22CA102E18BB6CD200A5B553 /* filterBAM.cpp in Sources */,
 				22E92C0B18AE3BED00E95319 /* Interval.cpp in Sources */,
-				22E92BD318AE3BED00E95319 /* stats.cpp in Sources */,
-				22E92BBC18AE3BED00E95319 /* connect.cpp in Sources */,
+				22CA102F18BB6CD200A5B553 /* fm-merge.cpp in Sources */,
 				22E92BA918AE3BED00E95319 /* OverlapExtractorWithCorrection.cpp in Sources */,
 				22E92BB518AE3BED00E95319 /* ScaffoldSequenceCollection.cpp in Sources */,
 				22E92BD918AE3BED00E95319 /* CompleteOverlapSet.cpp in Sources */,
@@ -1203,35 +1233,35 @@
 				22E92B8718AE3BED00E95319 /* ClusterProcess.cpp in Sources */,
 				22E92BB418AE3BED00E95319 /* ScaffoldSearch.cpp in Sources */,
 				22E92B9718AE3BED00E95319 /* SearchSeed.cpp in Sources */,
-				22E92BD118AE3BED00E95319 /* scaffold2fasta.cpp in Sources */,
+				22CA104018BB6CD200A5B553 /* scaffold.cpp in Sources */,
 				22E92B8F18AE3BED00E95319 /* KmerOverlaps.cpp in Sources */,
-				22E92BC818AE3BED00E95319 /* merge.cpp in Sources */,
 				22E92BF818AE3BED00E95319 /* STCommon.cpp in Sources */,
 				22E92C1C18AE3BED00E95319 /* VCFUtil.cpp in Sources */,
 				22E92BFF18AE3BED00E95319 /* MurmurHash3.cpp in Sources */,
-				22E92BBB18AE3BED00E95319 /* cluster.cpp in Sources */,
+				22CA103C18BB6CD200A5B553 /* preqc.cpp in Sources */,
 				22E92BA418AE3BED00E95319 /* DindelHMM.cpp in Sources */,
+				22CA104218BB6CD200A5B553 /* sga.cpp in Sources */,
 				22E92C0618AE3BED00E95319 /* bucketSort.cpp in Sources */,
 				22E92C1018AE3BED00E95319 /* Pileup.cpp in Sources */,
 				22E92B9B18AE3BED00E95319 /* VariationBuilderCommon.cpp in Sources */,
+				22CA102818BB6CD200A5B553 /* cluster.cpp in Sources */,
 				22E92BE718AE3BED00E95319 /* BWTReaderBinary.cpp in Sources */,
 				22E92BEE18AE3BED00E95319 /* Occurrence.cpp in Sources */,
-				22E92BC918AE3BED00E95319 /* overlap.cpp in Sources */,
 				22E92C0F18AE3BED00E95319 /* MultiOverlap.cpp in Sources */,
 				22E92BA718AE3BED00E95319 /* GraphCompare.cpp in Sources */,
-				22E92BC118AE3BED00E95319 /* fm-merge.cpp in Sources */,
+				22CA102B18BB6CD200A5B553 /* correct_trio.cpp in Sources */,
+				22CA103618BB6CD200A5B553 /* merge.cpp in Sources */,
+				22CA103818BB6CD200A5B553 /* OverlapCommon.cpp in Sources */,
 				22E92C1318AE3BED00E95319 /* QualityTable.cpp in Sources */,
-				22E92BC318AE3BED00E95319 /* gen-ssa.cpp in Sources */,
+				22CA103018BB6CD200A5B553 /* gapfill.cpp in Sources */,
 				22E92BE418AE3BED00E95319 /* BWTIntervalCache.cpp in Sources */,
-				22E92BC218AE3BED00E95319 /* gapfill.cpp in Sources */,
 				22E92C0218AE3BED00E95319 /* Alphabet.cpp in Sources */,
-				22E92BCB18AE3BED00E95319 /* oview.cpp in Sources */,
 				22E92B9D18AE3BED00E95319 /* Edge.cpp in Sources */,
 				22E92BF518AE3BED00E95319 /* SAReader.cpp in Sources */,
 				22E92B9318AE3BED00E95319 /* OverlapTools.cpp in Sources */,
 				22E92B9618AE3BED00E95319 /* SearchHistory.cpp in Sources */,
 				22E92BF918AE3BED00E95319 /* SuffixArray.cpp in Sources */,
-				22E92BC518AE3BED00E95319 /* graph-diff.cpp in Sources */,
+				22CA104518BB6CD200A5B553 /* variant-detectability.cpp in Sources */,
 				22E92B9A18AE3BED00E95319 /* StringThreader.cpp in Sources */,
 				22E92BAB18AE3BED00E95319 /* PairedDeBruijnHaplotypeBuilder.cpp in Sources */,
 				22E92B8D18AE3BED00E95319 /* GapFillProcess.cpp in Sources */,
@@ -1243,60 +1273,65 @@
 				22E92BFD18AE3BED00E95319 /* gzstream.C in Sources */,
 				22E92BAA18AE3BED00E95319 /* OverlapHaplotypeBuilder.cpp in Sources */,
 				22E92BDF18AE3BED00E95319 /* SGWalk.cpp in Sources */,
-				22E92BD418AE3BED00E95319 /* subgraph.cpp in Sources */,
 				22E92BED18AE3BED00E95319 /* InverseSuffixArray.cpp in Sources */,
 				22E92BF418AE3BED00E95319 /* SampledSuffixArray.cpp in Sources */,
 				22E92B9418AE3BED00E95319 /* QCProcess.cpp in Sources */,
-				22E92BBF18AE3BED00E95319 /* filter.cpp in Sources */,
-				22E92BB918AE3BED00E95319 /* assemble.cpp in Sources */,
+				22CA104418BB6CD200A5B553 /* subgraph.cpp in Sources */,
+				22CA103318BB6CD200A5B553 /* graph-diff.cpp in Sources */,
 				22E92BA518AE3BED00E95319 /* DindelRealignWindow.cpp in Sources */,
-				22E92BC618AE3BED00E95319 /* haplotype-filter.cpp in Sources */,
+				22CA103D18BB6CD200A5B553 /* rewrite-evidence-bam.cpp in Sources */,
 				22E92BAE18AE3BED00E95319 /* ScaffoldAlgorithms.cpp in Sources */,
 				22E92BE118AE3BED00E95319 /* BWTCABauerCoxRosone.cpp in Sources */,
 				22E92BB218AE3BED00E95319 /* ScaffoldLink.cpp in Sources */,
 				22E92BB018AE3BED00E95319 /* ScaffoldGraph.cpp in Sources */,
 				22E92BD718AE3BED00E95319 /* ASQG.cpp in Sources */,
+				22CA104318BB6CD200A5B553 /* stats.cpp in Sources */,
 				22E92C0318AE3BED00E95319 /* BitChar.cpp in Sources */,
 				22E92BE918AE3BED00E95319 /* BWTWriter.cpp in Sources */,
 				22E92C0A18AE3BED00E95319 /* DNAString.cpp in Sources */,
-				22E92BCE18AE3BED00E95319 /* rewrite-evidence-bam.cpp in Sources */,
 				22E92BA118AE3BED00E95319 /* RmdupProcess.cpp in Sources */,
 				22E92BDC18AE3BED00E95319 /* SGSearch.cpp in Sources */,
 				22E92C0818AE3BED00E95319 /* Contig.cpp in Sources */,
 				22E92C0D18AE3BED00E95319 /* Match.cpp in Sources */,
 				22E92B8A18AE3BED00E95319 /* ErrorCorrectProcess.cpp in Sources */,
+				22CA103418BB6CD200A5B553 /* haplotype-filter.cpp in Sources */,
+				22CA102918BB6CD200A5B553 /* connect.cpp in Sources */,
 				22E92B8B18AE3BED00E95319 /* ExtensionDP.cpp in Sources */,
 				22E92B9918AE3BED00E95319 /* StringGraphGenerator.cpp in Sources */,
 				22E92BF618AE3BED00E95319 /* SAWriter.cpp in Sources */,
+				22CA104118BB6CD200A5B553 /* scaffold2fasta.cpp in Sources */,
 				22E92BB818AE3BED00E95319 /* ScaffoldWalk.cpp in Sources */,
+				22CA103518BB6CD200A5B553 /* index.cpp in Sources */,
 				22E92C1818AE3BED00E95319 /* SeqReader.cpp in Sources */,
 				22E92BB618AE3BED00E95319 /* ScaffoldVertex.cpp in Sources */,
 				22E92B9018AE3BED00E95319 /* LRAlignment.cpp in Sources */,
-				22E92BD618AE3BED00E95319 /* walk.cpp in Sources */,
 				22E92BEF18AE3BED00E95319 /* PopulationIndex.cpp in Sources */,
-				22E92BCC18AE3BED00E95319 /* preprocess.cpp in Sources */,
+				22CA103718BB6CD200A5B553 /* overlap.cpp in Sources */,
+				22CA103A18BB6CD200A5B553 /* PCR-pair-removal.cpp in Sources */,
 				22E92C0E18AE3BED00E95319 /* MultiAlignment.cpp in Sources */,
 				22E92B9118AE3BED00E95319 /* OverlapAlgorithm.cpp in Sources */,
+				22CA103B18BB6CD200A5B553 /* preprocess.cpp in Sources */,
 				22E92BFB18AE3BED00E95319 /* bcr.c in Sources */,
 				22E92B9818AE3BED00E95319 /* StatsProcess.cpp in Sources */,
 				22E92C1218AE3BED00E95319 /* Quality.cpp in Sources */,
 				22E92BA318AE3BED00E95319 /* DeBruijnHaplotypeBuilder.cpp in Sources */,
 				22E92BF218AE3BED00E95319 /* RLBWT.cpp in Sources */,
 				22E92BE218AE3BED00E95319 /* BWTCARopebwt.cpp in Sources */,
+				22CA103218BB6CD200A5B553 /* gmap.cpp in Sources */,
 				22E92BDE18AE3BED00E95319 /* SGVisitors.cpp in Sources */,
 				22E92BE018AE3BED00E95319 /* BWTAlgorithms.cpp in Sources */,
 				22E92BFE18AE3BED00E95319 /* multiple_alignment.cpp in Sources */,
-				22E92BC418AE3BED00E95319 /* gmap.cpp in Sources */,
-				22E92BBA18AE3BED00E95319 /* bwt2fa.cpp in Sources */,
 				22E92C0518AE3BED00E95319 /* BloomFilter.cpp in Sources */,
 				22E92BDD18AE3BED00E95319 /* SGUtil.cpp in Sources */,
+				22CA104618BB6CD200A5B553 /* walk.cpp in Sources */,
 				22E92BF718AE3BED00E95319 /* SBWT.cpp in Sources */,
-				22E92BCF18AE3BED00E95319 /* rmdup.cpp in Sources */,
 				22E92BB318AE3BED00E95319 /* ScaffoldRecord.cpp in Sources */,
-				22E92BD218AE3BED00E95319 /* sga.cpp in Sources */,
 				22E92B8818AE3BED00E95319 /* ConnectProcess.cpp in Sources */,
 				22E92C0118AE3BED00E95319 /* stdaln.c in Sources */,
+				22CA104F18BB73AC00A5B553 /* TrioCorrectProcess.cpp in Sources */,
 				22E92BFA18AE3BED00E95319 /* SuffixCompare.cpp in Sources */,
+				22CA102D18BB6CD200A5B553 /* filter.cpp in Sources */,
+				22CA103E18BB6CD200A5B553 /* rmdup.cpp in Sources */,
 				22E92C1A18AE3BED00E95319 /* StdAlnTools.cpp in Sources */,
 				22E92C1618AE3BED00E95319 /* ReadTable.cpp in Sources */,
 				22E92BDB18AE3BED00E95319 /* SGAlgorithms.cpp in Sources */,
@@ -1306,10 +1341,15 @@
 				22E92BE318AE3BED00E95319 /* BWTDiskConstruction.cpp in Sources */,
 				22E92BF318AE3BED00E95319 /* SACAInducedCopying.cpp in Sources */,
 				22E92BDA18AE3BED00E95319 /* RemovalAlgorithm.cpp in Sources */,
+				22CA104D18BB73AC00A5B553 /* MapBWTPairing.cpp in Sources */,
+				22CA102A18BB6CD200A5B553 /* correct.cpp in Sources */,
+				22CA103F18BB6CD200A5B553 /* sample-reads.cpp in Sources */,
 				22E92BF018AE3BED00E95319 /* QuickBWT.cpp in Sources */,
 				22E92C1B18AE3BED00E95319 /* Util.cpp in Sources */,
-				22E92BCA18AE3BED00E95319 /* OverlapCommon.cpp in Sources */,
+				22CA103118BB6CD200A5B553 /* gen-ssa.cpp in Sources */,
 				22E92BAF18AE3BED00E95319 /* ScaffoldEdge.cpp in Sources */,
+				22CA102618BB6CD200A5B553 /* assemble.cpp in Sources */,
+				22CA103918BB6CD200A5B553 /* oview.cpp in Sources */,
 				22E92C0918AE3BED00E95319 /* CorrectionThresholds.cpp in Sources */,
 				22E92C1418AE3BED00E95319 /* QualityVector.cpp in Sources */,
 				22E92BAC18AE3BED00E95319 /* StringHaplotypeBuilder.cpp in Sources */,
@@ -1319,9 +1359,7 @@
 				22E92BB118AE3BED00E95319 /* ScaffoldGroup.cpp in Sources */,
 				22E92B8918AE3BED00E95319 /* DPAlignment.cpp in Sources */,
 				22E92C0718AE3BED00E95319 /* ClusterReader.cpp in Sources */,
-				22E92BC718AE3BED00E95319 /* index.cpp in Sources */,
-				22E92BC018AE3BED00E95319 /* filterBAM.cpp in Sources */,
-				22E92BBD18AE3BED00E95319 /* correct.cpp in Sources */,
+				22CA102718BB6CD200A5B553 /* bwt2fa.cpp in Sources */,
 				22E92BEB18AE3BED00E95319 /* BWTWriterBinary.cpp in Sources */,
 				22E92C1918AE3BED00E95319 /* SGAStats.cpp in Sources */,
 				22E92BEC18AE3BED00E95319 /* GapArray.cpp in Sources */,
