@@ -171,7 +171,7 @@ int correctMain(int argc, char** argv)
     // Open outfiles and start a timer
     std::ostream* pWriter = createWriter(opt::outFile);
     std::ostream* pDiscardWriter = (!opt::discardFile.empty() ? createWriter(opt::discardFile) : NULL);
-    Timer* pTimer = new Timer(PROGRAM_IDENT);
+    Timer timer(PROGRAM_IDENT);
     pBWT->printInfo();
 
     // Set the error correction parameters
@@ -238,9 +238,8 @@ int correctMain(int argc, char** argv)
     if(pSSA != NULL)
         delete pSSA;
 
-    delete pTimer;
-    
-    delete pWriter;
+    if (pWriter)
+      delete pWriter;
     if(pDiscardWriter != NULL)
         delete pDiscardWriter;
 

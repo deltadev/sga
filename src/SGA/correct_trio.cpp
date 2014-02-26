@@ -168,7 +168,8 @@ int correctTrioMain(int argc, char** argv)
     std::ostream* pNeitherParentWriter = (opt::bPhase ? createWriter(opt::neitherParentFile) : NULL);
     std::ostream* pInconsistentPhaseWriter = (opt::bPhase ? createWriter(opt::inconsistentPhaseFile) : NULL);
     
-    Timer* pTimer = new Timer(PROGRAM_IDENT);
+    Timer timer(PROGRAM_IDENT);
+
     offspringIndexSet.pBWT->printInfo();
     
     // Set the error correction parameters
@@ -247,9 +248,9 @@ int correctTrioMain(int argc, char** argv)
     deleteIndices(motherIndexSet);
     deleteIndices(fatherIndexSet);
     
-    delete pTimer;
-    
-    delete pWriter;
+
+    if (pWriter)
+      delete pWriter;
     if(pDiscardWriter != NULL)
         delete pDiscardWriter;
     
@@ -388,16 +389,16 @@ void parseCorrectTrioOptions(int argc, char** argv)
         out_prefix = stripFilename(opt::outFile);
     }
     if(opt::bPhase) {
-        opt::maternalFile = "maternal_" + out_prefix + ".ec.fa";
-        opt::paternalFile = "paternal_" + out_prefix + ".ec.fa";
-        opt::neitherParentFile = "neither_" + out_prefix + ".fa";
-        opt::inconsistentPhaseFile = "inconsistent_" + out_prefix + ".fa";
+        opt::maternalFile = out_prefix + "_maternal.ec.fa";
+        opt::paternalFile = out_prefix + "_paternal.ec.fa";
+        opt::neitherParentFile = out_prefix + "_neither.fa";
+        opt::inconsistentPhaseFile = out_prefix + "_inconsistent.fa";
     } else {
-        opt::outFile = out_prefix + ".ec.fa";
+        opt::outFile = out_prefix + ".trio.ec.fa";
     }    
     if(bDiscardReads)
     {
-        opt::discardFile = out_prefix + ".discard.fa";
+        opt::discardFile = out_prefix + ".trio.discard.fa";
     }
     else
     {
