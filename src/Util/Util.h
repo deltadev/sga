@@ -279,5 +279,24 @@ inline bool isErrorRateAcceptable(double er, double threshold)
         return false;
 }
 
+template<typename I>
+void reverseComplementInPlace(I first, I last)
+{
+  std::transform(first, last, first, [](char base) {
+    switch(base)
+    {
+      case 'A': return 'T';
+      case 'C': return 'G';
+      case 'G': return 'C';
+      case 'T': return 'A';
+      case 'N': return 'N';
+      default:
+        assert(false && "Unknown base!");
+        return 'N';
+    }
+  });
+  std::reverse(first, last);
+}
+
 
 #endif

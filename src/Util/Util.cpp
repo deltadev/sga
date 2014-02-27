@@ -7,6 +7,7 @@
 // Util - Common data structures and functions
 //
 #include <iostream>
+#include <algorithm>
 #include <math.h>
 #include <map>
 #include "Util.h"
@@ -16,15 +17,18 @@
 //
 
 // Reverse complement a sequence
+using std::begin; using std::end;
+
+std::string reverseComplementCopy(std::string::const_iterator first,
+                                  std::string::const_iterator last)
+{
+  std::string rc{first, last};
+  reverseComplementInPlace(begin(rc), end(rc));
+  return rc;
+}
 std::string reverseComplement(const std::string& seq)
 {
-    std::string out(seq.length(), 'A');
-    size_t last_pos = seq.length() - 1;
-    for(int i = last_pos; i >= 0; --i)
-    {
-        out[last_pos - i] = complement(seq[i]);
-    }
-    return out;
+  return reverseComplementCopy(begin(seq), end(seq));
 }
 
 // Reverse complement a sequence using the full iupac alphabet
