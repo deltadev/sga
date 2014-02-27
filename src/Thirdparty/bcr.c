@@ -458,7 +458,11 @@ static int worker_aux(worker_t *w)
 	return (w->bcr->max_len == w->pos);
 }
 
-static void *worker(void *data) { while (worker_aux(data) == 0); return 0; }
+static void *worker(void *data) {
+  while (worker_aux(data) == 0)
+    ;
+  return 0;
+}
 
 void bcr_build(bcr_t *b)
 {
@@ -469,7 +473,7 @@ void bcr_build(bcr_t *b)
     pair64_t* sub_a;
 	pthread_t *tid = 0;
 	worker_t *w = 0;
-    int64_t seq_idx = 0;
+  //int64_t seq_idx = 0;
 
 	bcr_gettime(&rt, &ct);
 	if (bcr_verbose >= 3) fprintf(stderr, "Read sequences into memory (%.3fs, %.3fs, %.3fM)\n", rt-b->rt0, ct-b->ct0, bcr_bwtmem(b)/1024./1024.);

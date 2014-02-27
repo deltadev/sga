@@ -1452,6 +1452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dj/remotes/github/bamtools/lib/Debug,
@@ -1466,6 +1467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dj/remotes/github/bamtools/lib/Debug,
