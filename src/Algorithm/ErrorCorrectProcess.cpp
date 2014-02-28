@@ -231,8 +231,8 @@ ErrorCorrectResult ErrorCorrectProcess::kmerCorrection(const SequenceWorkItem& w
         return result;
     }
 
-    int n = readSequence.size();
-    int nk = n - m_params.kmerLength + 1;
+    int const n = readSequence.size();
+    int const nk = n - m_params.kmerLength + 1;
     
     // Are all kmers in the read well-represented?
     bool allSolid = false;
