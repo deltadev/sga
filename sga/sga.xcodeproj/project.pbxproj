@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2270157918BF7B8A0031F4F1 /* DindelHMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5218AE3BED00E95319 /* DindelHMM.cpp */; };
+		2270157A18BF7B8A0031F4F1 /* DindelRealignWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5418AE3BED00E95319 /* DindelRealignWindow.cpp */; };
+		2270157B18BF7B8A0031F4F1 /* DindelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5618AE3BED00E95319 /* DindelUtil.cpp */; };
 		22B8153918AE3B070053479B /* sga.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22B8153818AE3B070053479B /* sga.1 */; };
 		22C1937818AEC9F90078A55F /* libbamtools.2.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */; };
 		22CA102618BB6CD200A5B553 /* assemble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE318BB6CD200A5B553 /* assemble.cpp */; };
@@ -75,9 +78,6 @@
 		22E92BA118AE3BED00E95319 /* RmdupProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A4818AE3BED00E95319 /* RmdupProcess.cpp */; };
 		22E92BA218AE3BED00E95319 /* DBGPathGuide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A4E18AE3BED00E95319 /* DBGPathGuide.cpp */; };
 		22E92BA318AE3BED00E95319 /* DeBruijnHaplotypeBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5018AE3BED00E95319 /* DeBruijnHaplotypeBuilder.cpp */; };
-		22E92BA418AE3BED00E95319 /* DindelHMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5218AE3BED00E95319 /* DindelHMM.cpp */; };
-		22E92BA518AE3BED00E95319 /* DindelRealignWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5418AE3BED00E95319 /* DindelRealignWindow.cpp */; };
-		22E92BA618AE3BED00E95319 /* DindelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5618AE3BED00E95319 /* DindelUtil.cpp */; };
 		22E92BA718AE3BED00E95319 /* GraphCompare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5818AE3BED00E95319 /* GraphCompare.cpp */; };
 		22E92BA818AE3BED00E95319 /* HapgenUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5A18AE3BED00E95319 /* HapgenUtil.cpp */; };
 		22E92BA918AE3BED00E95319 /* OverlapExtractorWithCorrection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5F18AE3BED00E95319 /* OverlapExtractorWithCorrection.cpp */; };
@@ -1210,6 +1210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2270157918BF7B8A0031F4F1 /* DindelHMM.cpp in Sources */,
+				2270157A18BF7B8A0031F4F1 /* DindelRealignWindow.cpp in Sources */,
+				2270157B18BF7B8A0031F4F1 /* DindelUtil.cpp in Sources */,
 				22CA105118BB7FF000A5B553 /* BWTTraverse.cpp in Sources */,
 				22E92BE618AE3BED00E95319 /* BWTReaderAscii.cpp in Sources */,
 				22CA104E18BB73AC00A5B553 /* RemovePCRDuplicates.cpp in Sources */,
@@ -1239,7 +1242,6 @@
 				22E92C1C18AE3BED00E95319 /* VCFUtil.cpp in Sources */,
 				22E92BFF18AE3BED00E95319 /* MurmurHash3.cpp in Sources */,
 				22CA103C18BB6CD200A5B553 /* preqc.cpp in Sources */,
-				22E92BA418AE3BED00E95319 /* DindelHMM.cpp in Sources */,
 				22CA104218BB6CD200A5B553 /* sga.cpp in Sources */,
 				22E92C0618AE3BED00E95319 /* bucketSort.cpp in Sources */,
 				22E92C1018AE3BED00E95319 /* Pileup.cpp in Sources */,
@@ -1278,7 +1280,6 @@
 				22E92B9418AE3BED00E95319 /* QCProcess.cpp in Sources */,
 				22CA104418BB6CD200A5B553 /* subgraph.cpp in Sources */,
 				22CA103318BB6CD200A5B553 /* graph-diff.cpp in Sources */,
-				22E92BA518AE3BED00E95319 /* DindelRealignWindow.cpp in Sources */,
 				22CA103D18BB6CD200A5B553 /* rewrite-evidence-bam.cpp in Sources */,
 				22E92BAE18AE3BED00E95319 /* ScaffoldAlgorithms.cpp in Sources */,
 				22E92BE118AE3BED00E95319 /* BWTCABauerCoxRosone.cpp in Sources */,
@@ -1335,7 +1336,6 @@
 				22E92C1A18AE3BED00E95319 /* StdAlnTools.cpp in Sources */,
 				22E92C1618AE3BED00E95319 /* ReadTable.cpp in Sources */,
 				22E92BDB18AE3BED00E95319 /* SGAlgorithms.cpp in Sources */,
-				22E92BA618AE3BED00E95319 /* DindelUtil.cpp in Sources */,
 				22E92BFC18AE3BED00E95319 /* count_min_sketch.cpp in Sources */,
 				22E92BB718AE3BED00E95319 /* ScaffoldVisitors.cpp in Sources */,
 				22E92BE318AE3BED00E95319 /* BWTDiskConstruction.cpp in Sources */,
@@ -1452,6 +1452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dj/remotes/github/bamtools/lib/Debug,
@@ -1466,6 +1467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dj/remotes/github/bamtools/lib/Debug,

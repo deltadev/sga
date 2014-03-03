@@ -244,7 +244,11 @@ double VariantPriors::getDefaultProbVariant(const std::string& type) const
     if (type == "SNP") return m_probSNP;
     else if (type == "INDEL") return m_probINDEL;
     else if (type == "MNP") return m_probMNP;
-    else assert(1==0); // ("Unknown variant type");
+    else
+    {
+      assert(1==0); // ("Unknown variant type");
+      exit(1);
+    }
 }
 
 

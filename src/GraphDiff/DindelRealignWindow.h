@@ -92,6 +92,7 @@ inline double log_one_minus_exp_minus_x(double x)
     } else
     {
         assert(1==0);
+      exit(1);
     }
 }
 
