@@ -5,11 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>C0BF23AB-D02D-4B39-BD04-C6B2B5431792</string>
+	<string>36215881-03CA-45E1-83A7-0BA33060516A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>sga</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>503BBF02-66FB-4446-AD84-B9DAE56433E2</key>
+		<string>ssh://github.com/pezmaster31/bamtools.git</string>
 		<key>894A84CD-E9F5-4581-B29C-194FE3A83F36</key>
 		<string>ssh://github.com/deltadev/sga.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>sga/sga.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>503BBF02-66FB-4446-AD84-B9DAE56433E2</key>
+		<string>../../../../bamtools</string>
 		<key>894A84CD-E9F5-4581-B29C-194FE3A83F36</key>
 		<string>../../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>894A84CD-E9F5-4581-B29C-194FE3A83F36</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>503BBF02-66FB-4446-AD84-B9DAE56433E2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bamtools</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

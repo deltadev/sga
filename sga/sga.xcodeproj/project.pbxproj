@@ -10,6 +10,7 @@
 		2270157918BF7B8A0031F4F1 /* DindelHMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5218AE3BED00E95319 /* DindelHMM.cpp */; };
 		2270157A18BF7B8A0031F4F1 /* DindelRealignWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5418AE3BED00E95319 /* DindelRealignWindow.cpp */; };
 		2270157B18BF7B8A0031F4F1 /* DindelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5618AE3BED00E95319 /* DindelUtil.cpp */; };
+		22A27A0E18E603BC00300472 /* sga in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22B8153318AE3B070053479B /* sga */; };
 		22B8153918AE3B070053479B /* sga.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22B8153818AE3B070053479B /* sga.1 */; };
 		22C1937818AEC9F90078A55F /* libbamtools.2.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */; };
 		22CA102618BB6CD200A5B553 /* assemble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE318BB6CD200A5B553 /* assemble.cpp */; };
@@ -171,6 +172,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		22A27A0D18E6039F00300472 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${HOME}/bin";
+			dstSubfolderSpec = 0;
+			files = (
+				22A27A0E18E603BC00300472 /* sga in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22B8153118AE3B070053479B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1151,6 +1162,7 @@
 				22B8152F18AE3B070053479B /* Sources */,
 				22B8153018AE3B070053479B /* Frameworks */,
 				22B8153118AE3B070053479B /* CopyFiles */,
+				22A27A0D18E6039F00300472 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1455,8 +1467,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/dj/remotes/github/bamtools/lib/Debug,
-					/Volumes/HD2/Users/dj/remotes/github/bamtools/lib/Debug,
+					/Users/dj/remotes/bamtools/lib/Release,
+					/Volumes/HD2/Users/dj/remotes/bamtools/lib/Release,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(HOME)/include/bamtools\" $(SRCROOT)/../src/ThirdParty/ ${HOME}/include";
@@ -1471,8 +1483,8 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/dj/remotes/github/bamtools/lib/Debug,
-					/Volumes/HD2/Users/dj/remotes/github/bamtools/lib/Debug,
+					/Users/dj/remotes/bamtools/lib/Release,
+					/Volumes/HD2/Users/dj/remotes/bamtools/lib/Release,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(HOME)/include/bamtools\" $(SRCROOT)/../src/ThirdParty/ ${HOME}/include";
