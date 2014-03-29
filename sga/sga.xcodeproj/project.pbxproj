@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22527E0D18E6729400092A97 /* libbamtools.2.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22527E0C18E6729400092A97 /* libbamtools.2.3.0.dylib */; };
 		2270157918BF7B8A0031F4F1 /* DindelHMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5218AE3BED00E95319 /* DindelHMM.cpp */; };
 		2270157A18BF7B8A0031F4F1 /* DindelRealignWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5418AE3BED00E95319 /* DindelRealignWindow.cpp */; };
 		2270157B18BF7B8A0031F4F1 /* DindelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E92A5618AE3BED00E95319 /* DindelUtil.cpp */; };
 		22B8153918AE3B070053479B /* sga.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22B8153818AE3B070053479B /* sga.1 */; };
-		22C1937818AEC9F90078A55F /* libbamtools.2.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */; };
 		22CA102618BB6CD200A5B553 /* assemble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE318BB6CD200A5B553 /* assemble.cpp */; };
 		22CA102718BB6CD200A5B553 /* bwt2fa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE518BB6CD200A5B553 /* bwt2fa.cpp */; };
 		22CA102818BB6CD200A5B553 /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CA0FE718BB6CD200A5B553 /* cluster.cpp */; };
@@ -194,6 +194,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22527E0C18E6729400092A97 /* libbamtools.2.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbamtools.2.3.0.dylib; path = ../../bamtools/lib/Debug/libbamtools.2.3.0.dylib; sourceTree = "<group>"; };
 		22B8153318AE3B070053479B /* sga */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sga; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B8153818AE3B070053479B /* sga.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sga.1; sourceTree = "<group>"; };
 		22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbamtools.2.3.0.dylib; path = ../../bamtools/lib/Debug/libbamtools.2.3.0.dylib; sourceTree = "<group>"; };
@@ -591,7 +592,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22C1937818AEC9F90078A55F /* libbamtools.2.3.0.dylib in Frameworks */,
+				22527E0D18E6729400092A97 /* libbamtools.2.3.0.dylib in Frameworks */,
 				22EAE88718AE518A0006AB7A /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +610,7 @@
 		22B8152A18AE3B070053479B = {
 			isa = PBXGroup;
 			children = (
+				22527E0C18E6729400092A97 /* libbamtools.2.3.0.dylib */,
 				22CA105018BB7B9300A5B553 /* config.h */,
 				22C1937718AEC9F90078A55F /* libbamtools.2.3.0.dylib */,
 				22EAE88618AE518A0006AB7A /* libz.dylib */,
@@ -1455,8 +1457,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/dj/remotes/github/bamtools/lib/Debug,
-					/Volumes/HD2/Users/dj/remotes/github/bamtools/lib/Debug,
+					/Users/dj/remotes/bamtools/lib/Release,
+					/Volumes/HD2/Users/dj/remotes/bamtools/lib/Release,
+					/Volumes/HD2/Users/dj/remotes/bamtools/lib/Debug,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(HOME)/include/bamtools\" $(SRCROOT)/../src/ThirdParty/ ${HOME}/include";
@@ -1471,8 +1474,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/dj/remotes/github/bamtools/lib/Debug,
-					/Volumes/HD2/Users/dj/remotes/github/bamtools/lib/Debug,
+					/Users/dj/remotes/bamtools/lib/Release,
+					/Volumes/HD2/Users/dj/remotes/bamtools/lib/Release,
+					/Volumes/HD2/Users/dj/remotes/bamtools/lib/Debug,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(HOME)/include/bamtools\" $(SRCROOT)/../src/ThirdParty/ ${HOME}/include";
